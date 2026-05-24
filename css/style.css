@@ -1143,7 +1143,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
 .page-intro-hero p { font-size: 13px; color: var(--color-muted); line-height: 2; margin: 0; }
 .page-intro-hero small { font-size: 12px; color: var(--color-muted); display: block; margin-top: 12px; }
 
-/* ---- トップ 3部紹介グリッド ---- */
+/* ---- トップ 三部紹介グリッド ---- */
 .dept-intro-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
 .dept-intro-card { display: block; text-decoration: none; color: inherit; border-radius: 8px; overflow: hidden; border: 1px solid var(--color-line); transition: transform 0.2s, box-shadow 0.2s; }
 .dept-intro-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
