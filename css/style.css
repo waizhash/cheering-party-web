@@ -1083,6 +1083,43 @@ section.bg-green { background: var(--color-green); color: #fff; }
 .org-box--brass { border-color: var(--color-gold); }
 .org-box--cheer { border-color: #c06090; }
 
+/* --- 組織体制 v2（カードグリッド） --- */
+.org-v2 { display: flex; flex-direction: column; gap: 12px; }
+.org-v2-row { display: flex; gap: 12px; }
+.org-v2-block {
+  background: var(--color-bg); border: 1px solid var(--color-line);
+  border-radius: 10px; padding: 18px 20px; flex: 1;
+}
+.org-v2-block--primary {
+  background: var(--color-green-l); border-color: var(--color-green);
+}
+.org-v2-block--wide { flex: 2; }
+.org-v2-head {
+  font-size: 11px; font-weight: 700; letter-spacing: 0.1em;
+  color: var(--color-muted); text-transform: uppercase;
+  padding-bottom: 10px; margin-bottom: 12px;
+  border-bottom: 1px solid var(--color-line);
+}
+.org-v2-block--primary .org-v2-head { color: var(--color-green); border-bottom-color: rgba(26,92,43,.2); }
+.org-v2-badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.org-v2-badge {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 6px 14px; border-radius: 999px;
+  font-size: 13px; font-weight: 600; line-height: 1.5; text-align: center;
+  background: #fff; border: 1.5px solid var(--color-line); color: var(--color-text);
+}
+.org-v2-badge--primary {
+  background: var(--color-green); color: #fff; border-color: var(--color-green);
+  font-size: 14px; padding: 8px 20px;
+}
+.org-v2-badge--dept {
+  background: var(--color-green-d); color: #fff; border-color: var(--color-green-d);
+}
+@media (max-width: 768px) {
+  .org-v2-row { flex-direction: column; }
+  .org-v2-block--wide { flex: 1; }
+}
+
 /* 役職テーブル */
 .role-table-wrap { overflow-x: auto; }
 .role-table { width: 100%; border-collapse: collapse; font-size: 14px; }
