@@ -1,0 +1,29 @@
+【 about/leader.html — リーダー部 】
+
+■ ページヒーロー（左右分割レイアウト 右側）
+  推奨サイズ：横 1600px 以上（横長）
+  ・images/departments/leader/leader-main.jpg  → 演舞・応援シーン（about.html・members.html と共用）
+
+■ 主な活動（4枚）
+  推奨サイズ：横 800px × 縦 600px（4:3）
+  ・images/departments/leader/activity-01.jpg  → 各種応援活動（野球スタンドからの演舞など）
+  ・images/departments/leader/activity-02.jpg  → 演舞・発声（式典・入学式・卒業式）
+  ・images/departments/leader/activity-03.jpg  → 新人指導・育成（練習シーン）
+  ・images/departments/leader/activity-04.jpg  → 団内行事の運営（合宿・行事など）
+
+■ 役割紹介（4枚）
+  推奨サイズ：横 800px × 縦 600px（4:3）
+  ・images/departments/leader/role-01.jpg  → センターリーダー（エール・指揮シーン）
+  ・images/departments/leader/role-02.jpg  → バック（演舞・応援動作シーン）
+  ・images/departments/leader/role-03.jpg  → 旗手（団旗を持っているシーン）
+  ・images/departments/leader/role-04.jpg  → 鼓手（太鼓を叩いているシーン）
+
+■ 団旗紹介（5枚・縦長推奨）
+  推奨サイズ：横 600px × 縦 900px（縦長）
+  ・images/departments/leader/flag-01.jpg  → 旧団旗（三重大学体育会応援団旧団旗）
+  ・images/departments/leader/flag-02.jpg  → 新団旗（三重大学体育会応援団新団旗）
+  ・images/departments/leader/flag-03.jpg  → 翠翔旗
+  ・images/departments/leader/flag-04.jpg  → 学章旗
+  ・images/departments/leader/flag-05.jpg  → 三翠旗（最新）
+
+合計 新規 13 枚（leader-main は共用）

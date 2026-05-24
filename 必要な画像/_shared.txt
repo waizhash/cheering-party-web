@@ -1,0 +1,7 @@
+【 全ページ共通 】
+
+■ エンブレム（ヘッダーロゴ・フッター紋章）
+  全ページで使用。CSS background-image で参照。
+  推奨サイズ：200px × 200px 以上（透過PNG）
+  ・images/emblem.png
+

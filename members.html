@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>団員紹介｜三重大学応援団</title>
+<meta name="description" content="三重大学応援団 リーダー部・ブラスバンド部・チアリーダー部の団員紹介です。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+ <div class="container">
+ <a href="index.html" class="site-logo">
+ <div class="site-emblem" aria-hidden="true"></div>
+ <div class="site-logo-text">
+ <span class="ja">三重大学応援団</span>
+ <span class="en">MIE UNIVERSITY OUENDAN</span>
+ </div>
+ </a>
+ <button class="nav-toggle" aria-label="メニューを開く" type="button"><span></span><span></span><span></span></button>
+ <nav class="global-nav">
+ <ul>
+ <li><a href="request.html">ステージ依頼をされる方へ</a></li>
+ <li><a href="recruit.html">新入生の方へ</a></li>
+ <li class="nav-dropdown">
+ <span class="nav-parent">三重大学応援団とは</span>
+ <ul class="nav-dropdown-menu">
+ <li><a href="about.html">概要</a></li>
+ <li><a href="about/greeting.html">団長挨拶</a></li>
+ <li><a href="about/organization.html">組織体制</a></li>
+ <li><a href="about/history.html">歴史</a></li>
+ <li><a href="about/schedule.html">年間予定</a></li>
+ </ul>
+ </li>
+ <li><a href="ouendan.html">応援紹介</a></li>
+ <li><a href="members.html" class="active">団員紹介</a></li>
+ </ul>
+ </nav>
+ </div>
+</header>
+
+<!-- スティッキー部門タブ -->
+<div class="dept-tabs-sticky">
+ <div class="dept-select-tabs">
+ <button class="dept-select-tab active" data-dept="leader" type="button"> リーダー部</button>
+ <button class="dept-select-tab" data-dept="brass" type="button"> ブラスバンド部</button>
+ <button class="dept-select-tab" data-dept="cheer" type="button"> チアリーダー部</button>
+ </div>
+</div>
+
+<!-- 全幅パネル -->
+<div class="members-panel-wrap">
+ <div data-dept-panel></div>
+</div>
+
+<!-- 固定フローティングCTA -->
+<a href="recruit.html" class="members-fixed-cta">
+ <span></span> 新入生の方へ（新歓情報）›
+</a>
+
+<footer class="site-footer">
+ <div class="container">
+ <div class="footer-inner">
+ <div>
+ <div class="footer-brand"><div class="footer-emblem" aria-hidden="true"></div><div class="footer-name"><span class="ja">三重大学応援団</span><span class="en">MIE UNIVERSITY OUENDAN</span></div></div>
+ <div class="footer-info"><p>三重大学 上浜キャンパス</p><p>〒514-8507 三重県津市栗真町屋町1577</p></div>
+ <div class="footer-sns" data-footer-sns></div>
+ </div>
+ <div class="footer-col"><h4>MENU</h4><ul class="footer-links"><li><a href="request.html">ステージ依頼をされる方へ</a></li><li><a href="recruit.html">新入生の方へ</a></li><li><a href="ouendan.html">応援紹介</a></li><li><a href="members.html">団員紹介</a></li></ul></div>
+ <div class="footer-col"><h4>三重大学応援団とは</h4><ul class="footer-links"><li><a href="about.html">概要</a></li><li><a href="about/history.html">歴史</a></li><li><a href="about/leader.html">リーダー部</a></li><li><a href="about/brass.html">ブラスバンド部</a></li><li><a href="about/cheer-dept.html">チアリーダー部</a></li></ul></div>
+ </div>
+ <div class="footer-bottom">© <span data-year></span> Mie University Ouendan All Rights Reserved.</div>
+ </div>
+</footer>
+
+<button class="scroll-top-btn" aria-label="ページトップへ">↑</button>
+<script src="js/data/settings.js"></script>
+<script src="js/data/members.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

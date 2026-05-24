@@ -1,0 +1,28 @@
+【 about/schedule.html — 年間予定 】
+
+■ ページヒーロー（左右分割レイアウト 右側）
+  推奨サイズ：横 1000px × 縦 600px 以上
+  ・images/about/schedule-hero.jpg  → 年間を通じた活動写真など
+
+■ 月別カード写真（単一行事月・9枚）
+  推奨サイズ：横 600px × 縦 400px（3:2）
+  ・images/about/schedule-05.jpg  → 5月：団章腕章授与式
+  ・images/about/schedule-06.jpg  → 6月：親睦キャンプ
+  ・images/about/schedule-07.jpg  → 7月：前期締め総合
+  ・images/about/schedule-08.jpg  → 8月：チアバンステージ
+  ・images/about/schedule-10.jpg  → 10月：学祭ステージ（みえ大祭）
+  ・images/about/schedule-11.jpg  → 11月：翠旗仰ぎて
+  ・images/about/schedule-12.jpg  → 12月：四日市ボウル
+  ・images/about/schedule-01.jpg  → 1月：新歓サミット
+  ・images/about/schedule-02.jpg  → 2月：マラソン応援
+
+■ 月別カード写真（複数行事月・タブ切り替え・6枚）
+  推奨サイズ：横 600px × 縦 400px（3:2）
+  ・images/about/schedule-04a.jpg  → 4月タブ①：新歓
+  ・images/about/schedule-04b.jpg  → 4月タブ②：野球応援（春リーグ）
+  ・images/about/schedule-09a.jpg  → 9月タブ①：秋合宿
+  ・images/about/schedule-09b.jpg  → 9月タブ②：野球応援（秋リーグ）
+  ・images/about/schedule-03a.jpg  → 3月タブ①：春合宿
+  ・images/about/schedule-03b.jpg  → 3月タブ②：卒団会
+
+合計 16 枚

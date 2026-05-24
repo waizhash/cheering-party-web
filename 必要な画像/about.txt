@@ -1,0 +1,17 @@
+【 about.html — 概要ページ 】
+
+■ ページヒーロー（左右分割レイアウト 右側）
+  推奨サイズ：横 1000px × 縦 600px 以上
+  ・images/about/about-hero.jpg  → 3部合同の集合写真など
+
+■「もっと応援団を知る」カード（6枚）
+  推奨サイズ：横 800px × 縦 600px（4:3）
+  ・images/about/card-org.jpg       → 組織体制カード背景
+  ・images/about/card-history.jpg   → 歴史カード背景
+  ・images/about/card-schedule.jpg  → 年間予定カード背景
+  ・images/departments/leader/leader-main.jpg  → リーダー部カード背景（各部ページと共用）
+  ・images/departments/brass/brass-main.jpg    → ブラスバンド部カード背景（各部ページと共用）
+  ・images/departments/cheer/cheer-main.jpg    → チアリーダー部カード背景（各部ページと共用）
+
+合計 新規 4 枚
+（leader-main・brass-main・cheer-main は index.html / 各部ページとも共用）

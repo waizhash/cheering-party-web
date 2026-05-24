@@ -1,0 +1,11 @@
+【 request.html — ステージ依頼 】
+
+■ 活動シーン紹介（4枚）
+  推奨サイズ：横 800px × 縦 600px（4:3）
+  ・images/activities/scene-sports.jpg  → スポーツ応援シーン（野球・スタンドから応援する場面）
+  ・images/activities/scene-brass.jpg   → ブラスバンド演奏シーン
+  ・images/activities/scene-parade.jpg  → パレードシーン（行進・マーチングなど）
+  ・images/activities/scene-event.jpg   → イベント出演シーン（大学祭・地域イベントなど）
+  ※ index.html の活動シーン紹介と同じ画像ファイルを共用
+
+合計 4 枚（index.html と完全共用）

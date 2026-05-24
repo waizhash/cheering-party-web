@@ -1,0 +1,23 @@
+【 about/brass.html — ブラスバンド部 】
+
+■ ページヒーロー（左右分割レイアウト 右側）
+  推奨サイズ：横 1600px 以上（横長）
+  ・images/departments/brass/brass-main.jpg  → 演奏シーン・集合など（about.html・members.html と共用）
+
+■ 主な活動（4枚）
+  推奨サイズ：横 800px × 縦 600px（4:3）
+  ・images/departments/brass/activity-01.jpg  → 野球応援（スタンドでの演奏）
+  ・images/departments/brass/activity-02.jpg  → 各種スポーツ応援（サッカー・ラグビーなど）
+  ・images/departments/brass/activity-03.jpg  → 式典・イベント出演（入学式・大学祭）
+  ・images/departments/brass/activity-04.jpg  → 定期演奏会
+
+■ 楽器紹介カルーセル（6枚・正方形推奨）
+  推奨サイズ：正方形（600px × 600px）
+  ・images/departments/brass/inst-trumpet.jpg    → トランペット
+  ・images/departments/brass/inst-trombone.jpg   → トロンボーン
+  ・images/departments/brass/inst-sax.jpg        → サックス（アルト・テナーなど）
+  ・images/departments/brass/inst-euphonium.jpg  → ユーフォニアム
+  ・images/departments/brass/inst-tuba.jpg       → チューバ
+  ・images/departments/brass/inst-perc.jpg       → パーカッション（スネア・バスドラムなど）
+
+合計 新規 10 枚（brass-main は共用）

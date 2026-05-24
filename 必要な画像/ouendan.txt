@@ -1,0 +1,7 @@
+【 ouendan.html — 応援紹介ページ 】
+
+■ ページヘッダー右側写真
+  推奨サイズ：横 1000px × 縦 600px 以上
+  ・images/about/ouendan-hero.jpg  → 演奏・演舞シーンなど
+
+合計 1 枚

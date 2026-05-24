@@ -1,0 +1,143 @@
+【 members.html — 団員紹介ページ 】
+
+  団員写真はすべて JS（MEMBERS_DATA）経由で動的に読み込まれます。
+  推奨サイズ：正方形（400px × 400px）または縦長（400px × 500px）
+              上半身・顔がはっきり映るもの推奨
+
+■ 部門パネルヘッダー背景（共用）
+  ・images/departments/leader/leader-main.jpg  → リーダー部パネル（index.html 等と共用）
+  ・images/departments/brass/brass-main.jpg    → ブラスバンド部パネル（index.html 等と共用）
+  ・images/departments/cheer/cheer-main.jpg    → チアリーダー部パネル（index.html 等と共用）
+
+========================================
+■ リーダー部（16名）
+========================================
+--- 4年生 ---
+・images/members/leader-y4-01.jpg  → 桂 大貴（団長）
+・images/members/leader-y4-02.jpg  → 玉田 陽平（副団長）
+・images/members/leader-y4-03.jpg  → 平松 那奈（新人勧誘責任者）
+・images/members/leader-y4-04.jpg  → 山村 優人（リーダー部観客動員対策責任者）
+
+--- 3年生 ---
+・images/members/leader-y3-01.jpg  → 小笠原 照弥
+・images/members/leader-y3-02.jpg  → 東出 壽一郎
+・images/members/leader-y3-03.jpg  → 武藤 光
+
+--- 2年生 ---
+・images/members/leader-y2-01.jpg  → 菅野 圭祐
+・images/members/leader-y2-02.jpg  → 芹澤 琢海
+・images/members/leader-y2-03.jpg  → 中塚 雄哉
+・images/members/leader-y2-04.jpg  → 平井 和貴
+・images/members/leader-y2-05.jpg  → 堀田 和来
+・images/members/leader-y2-06.jpg  → 森川 瑛太
+
+--- 1年生 ---
+・images/members/leader-y1-02.jpg  → 河野 碧範
+・images/members/leader-y1-03.jpg  → 田畑 蹴翔
+・images/members/leader-y1-04.jpg  → 多和田 功
+・images/members/leader-y1-05.jpg  → 鳥越 咲太郎
+・images/members/leader-y1-07.jpg  → 柗本 透海
+・images/members/leader-y1-08.jpg  → 三宅 遥人
+
+========================================
+■ ブラスバンド部（43名）
+========================================
+--- 4年生 ---
+・images/members/brass-y4-01.jpg  → 水野 颯士（主務）
+・images/members/brass-y4-02.jpg  → 藤井 理沙子（ブラスバンド部長）
+・images/members/brass-y4-03.jpg  → 水澤 日女香（副務）
+・images/members/brass-y4-04.jpg  → 古屋 琢人（ブラスバンド部総務）
+・images/members/brass-y4-05.jpg  → 岡田 美紀（会計責任者）
+・images/members/brass-y4-06.jpg  → 大森 悠生（新人勧誘責任者）
+・images/members/brass-y4-07.jpg  → 稲垣 颯太（ブラスバンド部観客動員対策責任者）
+・images/members/brass-y4-08.jpg  → 保村 美里（指揮）
+
+--- 3年生 ---
+・images/members/brass-y3-01.jpg  → 阿加井 淳大
+・images/members/brass-y3-02.jpg  → 奥平 禎大
+・images/members/brass-y3-03.jpg  → 木下 心晴
+・images/members/brass-y3-04.jpg  → 黒川 美桜
+・images/members/brass-y3-05.jpg  → 榊原 大生
+・images/members/brass-y3-06.jpg  → 坂本 十桜子
+・images/members/brass-y3-07.jpg  → 髙橋 陽菜詩
+・images/members/brass-y3-08.jpg  → 張 悠然
+・images/members/brass-y3-09.jpg  → 鶴間 仁那
+・images/members/brass-y3-10.jpg  → ハシミ ワイズ
+・images/members/brass-y3-11.jpg  → 古田 奏帆
+・images/members/brass-y3-12.jpg  → 三谷 和暖
+・images/members/brass-y3-13.jpg  → 森 舞衣弥
+・images/members/brass-y3-14.jpg  → 山田 莉央
+・images/members/brass-y3-15.jpg  → 糸見 晃来
+
+--- 2年生 ---
+・images/members/brass-y2-01.jpg  → 和泉 陽葵
+・images/members/brass-y2-02.jpg  → 井上 幹都
+・images/members/brass-y2-03.jpg  → 大崎 瑶代
+・images/members/brass-y2-04.jpg  → 角田 勇登
+・images/members/brass-y2-05.jpg  → 川口 蒼空
+・images/members/brass-y2-06.jpg  → 高橋 勇磨
+・images/members/brass-y2-07.jpg  → 手嶋 大智
+・images/members/brass-y2-08.jpg  → 遠山 紗希
+・images/members/brass-y2-09.jpg  → 野村 花乃
+・images/members/brass-y2-10.jpg  → 長谷 圭悟
+・images/members/brass-y2-11.jpg  → 藤田 愛子
+・images/members/brass-y2-12.jpg  → 堀木 優来
+・images/members/brass-y2-13.jpg  → 前田 壮良
+・images/members/brass-y2-14.jpg  → 森家 千晴
+・images/members/brass-y2-15.jpg  → 髙橋 奈々子
+
+--- 1年生 ---
+・images/members/brass-y1-01.jpg  → 池田 菜穂
+・images/members/brass-y1-02.jpg  → 伊藤 和希
+・images/members/brass-y1-03.jpg  → 鵜飼 太智
+・images/members/brass-y1-04.jpg  → 江幡 朱莉
+・images/members/brass-y1-05.jpg  → 楠智 尋
+・images/members/brass-y1-06.jpg  → 小関 理心
+・images/members/brass-y1-07.jpg  → 後藤 宏平
+・images/members/brass-y1-08.jpg  → 三田 真愛
+・images/members/brass-y1-09.jpg  → 島井 涼也
+・images/members/brass-y1-10.jpg  → 田上 陽翔
+・images/members/brass-y1-11.jpg  → 中西 悠斗
+・images/members/brass-y1-12.jpg  → 藤井 めい
+・images/members/brass-y1-13.jpg  → 寳達 万緒
+・images/members/brass-y1-14.jpg  → 堀 拓海
+・images/members/brass-y1-15.jpg  → 三浦 秀斗
+・images/members/brass-y1-17.jpg  → 横田 潤地
+
+========================================
+■ チアリーダー部（25名）
+========================================
+--- 4年生 ---
+・images/members/cheer-y4-01.jpg  → 魚谷 美咲（チアリーダー部長）
+・images/members/cheer-y4-02.jpg  → 山田 小道（副務）
+・images/members/cheer-y4-03.jpg  → 岩松 里奈（チアリーダー部総務）
+・images/members/cheer-y4-04.jpg  → 古賀 陽花（チアリーダー部新人監督）
+・images/members/cheer-y4-05.jpg  → 地主 優音（チアリーダー部観客動員対策責任者）
+
+--- 3年生 ---
+・images/members/cheer-y3-01.jpg  → 安達 智美
+・images/members/cheer-y3-02.jpg  → 大橋 礼奈
+・images/members/cheer-y3-03.jpg  → 西村 汐織
+
+--- 2年生 ---
+・images/members/cheer-y2-01.jpg  → 伊藤 百恵
+・images/members/cheer-y2-02.jpg  → 戎本 ひなの
+・images/members/cheer-y2-03.jpg  → 竹内 潤
+・images/members/cheer-y2-04.jpg  → 田中 柚らら
+・images/members/cheer-y2-05.jpg  → 中田 春瑠
+・images/members/cheer-y2-06.jpg  → 西原 万結
+・images/members/cheer-y2-07.jpg  → 藤嶋 紗也花
+
+--- 1年生 ---
+・images/members/cheer-y1-01.jpg  → 岩﨑 柚月
+・images/members/cheer-y1-02.jpg  → 浦田 芽依
+・images/members/cheer-y1-03.jpg  → 尾関 真央
+・images/members/cheer-y1-04.jpg  → 久米 かのこ
+・images/members/cheer-y1-05.jpg  → 倉田 芽依
+・images/members/cheer-y1-06.jpg  → 田原 沙衣
+・images/members/cheer-y1-07.jpg  → 辻本 奈津実
+・images/members/cheer-y1-08.jpg  → 中野 莉緒
+・images/members/cheer-y1-09.jpg  → 野﨑 万央
+・images/members/cheer-y1-10.jpg  → 平野 ましろ
+
+合計 84 枚（団員写真）＋ 3 枚（パネルヘッダー共用）

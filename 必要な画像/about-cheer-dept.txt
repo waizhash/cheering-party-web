@@ -1,0 +1,30 @@
+【 about/cheer-dept.html — チアリーダー部 】
+
+■ ページヒーロー（左右分割レイアウト 右側）
+  推奨サイズ：横 1600px 以上（横長）
+  ・images/departments/cheer/cheer-main.jpg  → 演技・スタンツシーンなど（about.html・members.html と共用）
+
+■ 主な活動（4枚）
+  推奨サイズ：横 800px × 縦 600px（4:3）
+  ・images/departments/cheer/activity-01.jpg  → スポーツ応援（チアダンス・スタンツ）
+  ・images/departments/cheer/activity-02.jpg  → イベント出演（大学祭・地域イベント）
+  ・images/departments/cheer/activity-03.jpg  → 新入生歓迎行事
+  ・images/departments/cheer/activity-04.jpg  → 練習・チームビルディングシーン
+
+■ ユニフォーム紹介（5枚・縦長推奨）
+  推奨サイズ：横 110px 表示（カード内縦帯）→ 元データは横 400px × 縦 600px 以上
+  ・images/departments/cheer/uniform-01.jpg  → ベーシック（ゴールド×グリーン）
+  ・images/departments/cheer/uniform-02.jpg  → ホワイト
+  ・images/departments/cheer/uniform-03.jpg  → グリーン
+  ・images/departments/cheer/uniform-04.jpg  → ブラック
+  ・images/departments/cheer/uniform-05.jpg  → イベントTシャツ
+
+■ スタンツ紹介カルーセル（5枚）
+  推奨サイズ：正方形またはやや縦長（600px × 600px ～ 600px × 800px）
+  ・images/departments/cheer/stunt-01.jpg  → ショルダースタンド
+  ・images/departments/cheer/stunt-02.jpg  → フライヤー（高く掲げている場面）
+  ・images/departments/cheer/stunt-03.jpg  → バスケットトス
+  ・images/departments/cheer/stunt-04.jpg  → ピラミッド
+  ・images/departments/cheer/stunt-05.jpg  → ジャンプ
+
+合計 新規 14 枚（cheer-main は共用）
