@@ -1565,3 +1565,33 @@ section.bg-green { background: var(--color-green); color: #fff; }
   .members-panel-grid { grid-template-columns: repeat(2,1fr); }
   .dept-tabs-sticky .dept-select-tab { padding: 10px 12px; font-size: 11px; }
 }
+
+/* ---------- 写真番号オーバーレイ（画像未設置時） ---------- */
+.photo-num-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(0,0,0,0.55) 0px,
+    rgba(0,0,0,0.55) 8px,
+    rgba(20,20,20,0.35) 8px,
+    rgba(20,20,20,0.35) 16px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+.photo-num-overlay span {
+  background: rgba(0,0,0,0.72);
+  color: var(--color-gold);
+  font-family: var(--font-en);
+  font-size: clamp(1rem, 3.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 6px 18px;
+  border: 1.5px solid var(--color-gold);
+  border-radius: 4px;
+  white-space: nowrap;
+}

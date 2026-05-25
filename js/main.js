@@ -18,6 +18,7 @@
  initDeptMsgTouch();
  initMonthTabs();
  initHeroSlider();
+ initPhotoOverlays();
  });
 
  /* ----------- ナビゲーション ----------- */
@@ -468,6 +469,29 @@
 
   // 5秒ごとに自動切り替え
   setInterval(function() { goTo(current + 1); }, 5000);
+ }
+
+ /* ----------- 写真番号オーバーレイ（画像未設置時に番号を表示） ----------- */
+ function initPhotoOverlays() {
+  document.querySelectorAll("[style*='background-image']").forEach(function(el) {
+   var style = el.getAttribute("style") || "";
+   var urlMatch = style.match(/url\(['"]?([^'")\s]*photo(\d+)\.jpg)['"]?\)/);
+   if (!urlMatch) return;
+   var src = urlMatch[1];
+   var num = urlMatch[2];
+   var img = new Image();
+   img.onerror = function() {
+    if (el.querySelector(".photo-num-overlay")) return;
+    if (window.getComputedStyle(el).position === "static") {
+     el.style.position = "relative";
+    }
+    var overlay = document.createElement("div");
+    overlay.className = "photo-num-overlay";
+    overlay.innerHTML = "<span>写真" + num + "</span>";
+    el.appendChild(overlay);
+   };
+   img.src = src;
+  });
  }
 
  /* ----------- 月カード写真タブ ----------- */
