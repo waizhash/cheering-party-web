@@ -1,7 +1,5 @@
-【 about/history.html — 応援団の歴史 】
+【歴史（about/history.html）】
 
-■ ページヒーロー（左右分割レイアウト 右側）
-  推奨サイズ：横 1000px × 縦 600px 以上
-  ・images/about/history-hero.jpg  → 伝統を感じる写真・集合写真など
-
-合計 1 枚
+写真11：歴史ページ ヒーロー写真
+  → ファイル名: photo11.jpg
+  → 保存場所: images/about/

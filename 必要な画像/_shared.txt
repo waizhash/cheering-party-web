@@ -1,7 +1,5 @@
-【 全ページ共通 】
+【複数ページで共有される画像】
 
-■ エンブレム（ヘッダーロゴ・フッター紋章）
-  全ページで使用。CSS background-image で参照。
-  推奨サイズ：200px × 200px 以上（透過PNG）
-  ・images/emblem.png
-
+写真29（リーダー部メイン）はindex.html・about.html・leader.htmlで共有
+写真41（ブラスバンド部メイン）はindex.html・about.html・brass.htmlで共有
+写真51（チアリーダー部メイン）はindex.html・about.html・cheer-dept.htmlで共有

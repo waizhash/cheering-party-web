@@ -1,37 +1,29 @@
-【 index.html — トップページ 】
+【トップページ（index.html）】
 
-■ ヒーロースライドショー（3枚・5秒自動切り替え）
-  推奨サイズ：横 1920px 以上 × 縦 900px 以上（横長）
-  ・images/hero/hero-01.jpg  → スライド1枚目（3部合同の応援シーン・迫力ある写真）
-  ・images/hero/hero-02.jpg  → スライド2枚目
-  ・images/hero/hero-03.jpg  → スライド3枚目
+写真1：トップページ メインビジュアル（大）
+  → ファイル名: photo1.jpg
+  → 保存場所: images/hero/
 
-■ 3部紹介カード
-  推奨サイズ：横 800px × 縦 600px（4:3）
-  ・images/departments/leader/leader-main.jpg  → リーダー部カード背景
-  ・images/departments/brass/brass-main.jpg    → ブラスバンド部カード背景
-  ・images/departments/cheer/cheer-main.jpg    → チアリーダー部カード背景
+写真2：トップページ ヒーロー写真1（左）
+  → ファイル名: photo2.jpg
+  → 保存場所: images/hero/
 
-■ 活動予定カード（schedule.js と連動・4枚）
-  推奨サイズ：横 800px × 縦 600px（4:3）
-  ・images/activities/sched-01.jpg  → 春季リーグ戦 応援
-  ・images/activities/sched-02.jpg  → 地域イベント出演
-  ・images/activities/sched-03.jpg  → 演奏会・ゲスト出演
-  ・images/activities/sched-04.jpg  → その他応援・行事
-  ※ 掲載する予定は schedule.js の SCHEDULE_ITEMS で管理。image フィールドを書き換えれば写真差し替え可能。
+写真3：トップページ ヒーロー写真2（中）
+  → ファイル名: photo3.jpg
+  → 保存場所: images/hero/
 
-■ 活動シーン紹介（4枚）
-  推奨サイズ：横 800px × 縦 600px（4:3）
-  ・images/activities/scene-sports.jpg  → スポーツ応援シーン（野球・スタンドから応援する場面）
-  ・images/activities/scene-event.jpg   → イベント出演シーン（大学祭・地域イベントなど）
-  ・images/activities/scene-parade.jpg  → パレードシーン（行進・マーチングなど）
-  ・images/activities/scene-brass.jpg   → ブラスバンド演奏シーン
+写真4：トップページ ヒーロー写真3（右）
+  → ファイル名: photo4.jpg
+  → 保存場所: images/hero/
 
-■ ステージ依頼CTAセクション（3枚グリッド）
-  推奨サイズ：横 600px × 縦 800px 以上（縦長）
-  ・images/departments/brass/brass-main.jpg  → 左写真（3部紹介カードと共用）
-  ・images/hero/hero-main.jpg               → 中央写真（迫力ある演奏・演舞シーン）
-  ・images/departments/cheer/cheer-main.jpg → 右写真（3部紹介カードと共用）
+写真29：リーダー部 メイン写真（共有画像）
+  → ファイル名: photo29.jpg
+  → 保存場所: images/departments/leader/
 
-合計 新規 8 枚
-（leader-main・brass-main・cheer-main は about.html / members.html とも共用）
+写真41：ブラスバンド部 メイン写真（共有画像）
+  → ファイル名: photo41.jpg
+  → 保存場所: images/departments/brass/
+
+写真51：チアリーダー部 メイン写真（共有画像）
+  → ファイル名: photo51.jpg
+  → 保存場所: images/departments/cheer/

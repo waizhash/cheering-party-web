@@ -1,7 +1,5 @@
-【 ouendan.html — 応援紹介ページ 】
+【応援紹介（ouendan.html）】
 
-■ ページヘッダー右側写真
-  推奨サイズ：横 1000px × 縦 600px 以上
-  ・images/about/ouendan-hero.jpg  → 演奏・演舞シーンなど
-
-合計 1 枚
+写真28：応援紹介 ヒーロー写真
+  → ファイル名: photo28.jpg
+  → 保存場所: images/about/

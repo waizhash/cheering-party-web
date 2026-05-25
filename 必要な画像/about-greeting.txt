@@ -1,11 +1,9 @@
-【 about/greeting.html — 団長挨拶 】
+【団長挨拶（about/greeting.html）】
 
-■ ページヒーロー（左右分割レイアウト 右側）
-  推奨サイズ：横 1000px × 縦 600px 以上
-  ・images/about/greeting-hero.jpg  → 応援シーンなど
+写真9：団長挨拶 ヒーロー写真
+  → ファイル名: photo9.jpg
+  → 保存場所: images/about/
 
-■ 団長プロフィール写真
-  推奨サイズ：横 280px × 縦 400px 以上（縦長・正面・上半身）
-  ・images/about/greeting.jpg  → 桂 大貴（団長）
-
-合計 2 枚
+写真10：団長 写真
+  → ファイル名: photo10.jpg
+  → 保存場所: images/about/

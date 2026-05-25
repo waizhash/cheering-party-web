@@ -1,28 +1,65 @@
-【 about/schedule.html — 年間予定 】
+【年間予定（about/schedule.html）】
 
-■ ページヒーロー（左右分割レイアウト 右側）
-  推奨サイズ：横 1000px × 縦 600px 以上
-  ・images/about/schedule-hero.jpg  → 年間を通じた活動写真など
+写真12：年間予定 ヒーロー写真
+  → ファイル名: photo12.jpg
+  → 保存場所: images/about/
 
-■ 月別カード写真（単一行事月・9枚）
-  推奨サイズ：横 600px × 縦 400px（3:2）
-  ・images/about/schedule-05.jpg  → 5月：団章腕章授与式
-  ・images/about/schedule-06.jpg  → 6月：親睦キャンプ
-  ・images/about/schedule-07.jpg  → 7月：前期締め総合
-  ・images/about/schedule-08.jpg  → 8月：チアバンステージ
-  ・images/about/schedule-10.jpg  → 10月：学祭ステージ（みえ大祭）
-  ・images/about/schedule-11.jpg  → 11月：翠旗仰ぎて
-  ・images/about/schedule-12.jpg  → 12月：四日市ボウル
-  ・images/about/schedule-01.jpg  → 1月：新歓サミット
-  ・images/about/schedule-02.jpg  → 2月：マラソン応援
+写真13：年間予定 4月 新歓
+  → ファイル名: photo13.jpg
+  → 保存場所: images/about/
 
-■ 月別カード写真（複数行事月・タブ切り替え・6枚）
-  推奨サイズ：横 600px × 縦 400px（3:2）
-  ・images/about/schedule-04a.jpg  → 4月タブ①：新歓
-  ・images/about/schedule-04b.jpg  → 4月タブ②：野球応援（春リーグ）
-  ・images/about/schedule-09a.jpg  → 9月タブ①：秋合宿
-  ・images/about/schedule-09b.jpg  → 9月タブ②：野球応援（秋リーグ）
-  ・images/about/schedule-03a.jpg  → 3月タブ①：春合宿
-  ・images/about/schedule-03b.jpg  → 3月タブ②：卒団会
+写真14：年間予定 4月 野球応援（春リーグ）
+  → ファイル名: photo14.jpg
+  → 保存場所: images/about/
 
-合計 16 枚
+写真15：年間予定 5月 団章腕章授与式
+  → ファイル名: photo15.jpg
+  → 保存場所: images/about/
+
+写真16：年間予定 6月 親睦キャンプ
+  → ファイル名: photo16.jpg
+  → 保存場所: images/about/
+
+写真17：年間予定 7月 前期締め総合
+  → ファイル名: photo17.jpg
+  → 保存場所: images/about/
+
+写真18：年間予定 8月 チアバンステージ
+  → ファイル名: photo18.jpg
+  → 保存場所: images/about/
+
+写真19：年間予定 9月 秋合宿
+  → ファイル名: photo19.jpg
+  → 保存場所: images/about/
+
+写真20：年間予定 9月 野球応援（秋リーグ）
+  → ファイル名: photo20.jpg
+  → 保存場所: images/about/
+
+写真21：年間予定 10月 学祭ステージ
+  → ファイル名: photo21.jpg
+  → 保存場所: images/about/
+
+写真22：年間予定 11月 翠旗仰ぎて
+  → ファイル名: photo22.jpg
+  → 保存場所: images/about/
+
+写真23：年間予定 12月 四日市ボウル
+  → ファイル名: photo23.jpg
+  → 保存場所: images/about/
+
+写真24：年間予定 1月 新歓サミット
+  → ファイル名: photo24.jpg
+  → 保存場所: images/about/
+
+写真25：年間予定 2月 マラソン応援
+  → ファイル名: photo25.jpg
+  → 保存場所: images/about/
+
+写真26：年間予定 3月 春合宿
+  → ファイル名: photo26.jpg
+  → 保存場所: images/about/
+
+写真27：年間予定 3月 卒団会
+  → ファイル名: photo27.jpg
+  → 保存場所: images/about/

@@ -1,23 +1,41 @@
-【 about/brass.html — ブラスバンド部 】
+【ブラスバンド部（about/brass.html）】
 
-■ ページヒーロー（左右分割レイアウト 右側）
-  推奨サイズ：横 1600px 以上（横長）
-  ・images/departments/brass/brass-main.jpg  → 演奏シーン・集合など（about.html・members.html と共用）
+写真41：ブラスバンド部 メイン写真
+  → ファイル名: photo41.jpg
+  → 保存場所: images/departments/brass/
 
-■ 主な活動（4枚）
-  推奨サイズ：横 800px × 縦 600px（4:3）
-  ・images/departments/brass/activity-01.jpg  → 野球応援（スタンドでの演奏）
-  ・images/departments/brass/activity-02.jpg  → 各種スポーツ応援（サッカー・ラグビーなど）
-  ・images/departments/brass/activity-03.jpg  → 式典・イベント出演（入学式・大学祭）
-  ・images/departments/brass/activity-04.jpg  → 定期演奏会
+写真42：ブラスバンド部 活動写真1 応援活動
+  → ファイル名: photo42.jpg
+  → 保存場所: images/departments/brass/
 
-■ 楽器紹介カルーセル（6枚・正方形推奨）
-  推奨サイズ：正方形（600px × 600px）
-  ・images/departments/brass/inst-trumpet.jpg    → トランペット
-  ・images/departments/brass/inst-trombone.jpg   → トロンボーン
-  ・images/departments/brass/inst-sax.jpg        → サックス（アルト・テナーなど）
-  ・images/departments/brass/inst-euphonium.jpg  → ユーフォニアム
-  ・images/departments/brass/inst-tuba.jpg       → チューバ
-  ・images/departments/brass/inst-perc.jpg       → パーカッション（スネア・バスドラムなど）
+写真43：ブラスバンド部 活動写真2 アンサンブルコンテスト
+  → ファイル名: photo43.jpg
+  → 保存場所: images/departments/brass/
 
-合計 新規 10 枚（brass-main は共用）
+写真44：ブラスバンド部 楽器 トランペット（★画像あり）
+  → ファイル名: photo44.jpg
+  → 保存場所: images/departments/brass/
+
+写真45：ブラスバンド部 楽器 クラリネット（★画像あり）
+  → ファイル名: photo45.jpg
+  → 保存場所: images/departments/brass/
+
+写真46：ブラスバンド部 楽器 トロンボーン（★画像あり）
+  → ファイル名: photo46.jpg
+  → 保存場所: images/departments/brass/
+
+写真47：ブラスバンド部 楽器 サックス
+  → ファイル名: photo47.jpg
+  → 保存場所: images/departments/brass/
+
+写真48：ブラスバンド部 楽器 ユーフォニアム（★画像あり）
+  → ファイル名: photo48.jpg
+  → 保存場所: images/departments/brass/
+
+写真49：ブラスバンド部 楽器 チューバ／スーザフォン（★画像あり）
+  → ファイル名: photo49.jpg
+  → 保存場所: images/departments/brass/
+
+写真50：ブラスバンド部 楽器 パーカッション
+  → ファイル名: photo50.jpg
+  → 保存場所: images/departments/brass/

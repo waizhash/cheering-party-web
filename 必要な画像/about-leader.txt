@@ -1,29 +1,49 @@
-【 about/leader.html — リーダー部 】
+【リーダー部（about/leader.html）】
 
-■ ページヒーロー（左右分割レイアウト 右側）
-  推奨サイズ：横 1600px 以上（横長）
-  ・images/departments/leader/leader-main.jpg  → 演舞・応援シーン（about.html・members.html と共用）
+写真29：リーダー部 メイン写真
+  → ファイル名: photo29.jpg
+  → 保存場所: images/departments/leader/
 
-■ 主な活動（4枚）
-  推奨サイズ：横 800px × 縦 600px（4:3）
-  ・images/departments/leader/activity-01.jpg  → 各種応援活動（野球スタンドからの演舞など）
-  ・images/departments/leader/activity-02.jpg  → 演舞・発声（式典・入学式・卒業式）
-  ・images/departments/leader/activity-03.jpg  → 新人指導・育成（練習シーン）
-  ・images/departments/leader/activity-04.jpg  → 団内行事の運営（合宿・行事など）
+写真30：リーダー部 活動写真1 応援活動
+  → ファイル名: photo30.jpg
+  → 保存場所: images/departments/leader/
 
-■ 役割紹介（4枚）
-  推奨サイズ：横 800px × 縦 600px（4:3）
-  ・images/departments/leader/role-01.jpg  → センターリーダー（エール・指揮シーン）
-  ・images/departments/leader/role-02.jpg  → バック（演舞・応援動作シーン）
-  ・images/departments/leader/role-03.jpg  → 旗手（団旗を持っているシーン）
-  ・images/departments/leader/role-04.jpg  → 鼓手（太鼓を叩いているシーン）
+写真31：リーダー部 活動写真2 リーダー演舞
+  → ファイル名: photo31.jpg
+  → 保存場所: images/departments/leader/
 
-■ 団旗紹介（5枚・縦長推奨）
-  推奨サイズ：横 600px × 縦 900px（縦長）
-  ・images/departments/leader/flag-01.jpg  → 旧団旗（三重大学体育会応援団旧団旗）
-  ・images/departments/leader/flag-02.jpg  → 新団旗（三重大学体育会応援団新団旗）
-  ・images/departments/leader/flag-03.jpg  → 翠翔旗
-  ・images/departments/leader/flag-04.jpg  → 学章旗
-  ・images/departments/leader/flag-05.jpg  → 三翠旗（最新）
+写真32：リーダー部 団旗写真1
+  → ファイル名: photo32.jpg
+  → 保存場所: images/departments/leader/
 
-合計 新規 13 枚（leader-main は共用）
+写真33：リーダー部 団旗写真2
+  → ファイル名: photo33.jpg
+  → 保存場所: images/departments/leader/
+
+写真34：リーダー部 団旗写真3
+  → ファイル名: photo34.jpg
+  → 保存場所: images/departments/leader/
+
+写真35：リーダー部 団旗写真4
+  → ファイル名: photo35.jpg
+  → 保存場所: images/departments/leader/
+
+写真36：リーダー部 団旗写真5
+  → ファイル名: photo36.jpg
+  → 保存場所: images/departments/leader/
+
+写真37：リーダー部 役割写真 センターリーダー
+  → ファイル名: photo37.jpg
+  → 保存場所: images/departments/leader/
+
+写真38：リーダー部 役割写真 バック
+  → ファイル名: photo38.jpg
+  → 保存場所: images/departments/leader/
+
+写真39：リーダー部 役割写真 旗手
+  → ファイル名: photo39.jpg
+  → 保存場所: images/departments/leader/
+
+写真40：リーダー部 役割写真 鼓手
+  → ファイル名: photo40.jpg
+  → 保存場所: images/departments/leader/

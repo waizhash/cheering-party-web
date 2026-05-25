@@ -1,32 +1,69 @@
-【 recruit.html — 新入生の方へ 】
+【新入生の方へ（recruit.html）】
 
-■ ヒーロー写真（右側3分割グリッド）
-  推奨サイズ：横 600px × 縦 800px 以上（縦長）
-  ・images/recruit/recruit-01.jpg  → 新歓・応援の雰囲気が伝わる写真①
-  ・images/recruit/recruit-02.jpg  → 新歓・応援の雰囲気が伝わる写真②
-  ・images/recruit/recruit-03.jpg  → 新歓・応援の雰囲気が伝わる写真③
+写真64：新入生ページ ヒーロー写真1
+  → ファイル名: photo64.jpg
+  → 保存場所: images/recruit/
 
-■ 各部長からのメッセージ（展開パネル背景・3枚）
-  推奨サイズ：横 600px × 縦 900px（縦長・全身または上半身）
-  ・images/recruit/leader-chief.jpg  → 団長 桂 大貴（リーダー部を代表）
-  ・images/recruit/brass-chief.jpg   → ブラスバンド部長 藤井 理沙子
-  ・images/recruit/cheer-chief.jpg   → チアリーダー部長 魚谷 美咲
+写真65：新入生ページ ヒーロー写真2
+  → ファイル名: photo65.jpg
+  → 保存場所: images/recruit/
 
-■ 新歓スケジュール タイムラインカード（5枚）
-  推奨サイズ：横 800px × 縦 600px（4:3）
-  ・images/recruit/shinkan-01.jpg  → 新歓イベント① 応援団ガイダンス
-  ・images/recruit/shinkan-02.jpg  → 新歓イベント② 新歓演舞
-  ・images/recruit/shinkan-03.jpg  → 新歓イベント③ 各部体験会
-  ・images/recruit/shinkan-04.jpg  → 新歓イベント④ 団員との交流会
-  ・images/recruit/shinkan-05.jpg  → 新歓イベント⑤ 春季リーグ応援見学
+写真66：新入生ページ ヒーロー写真3
+  → ファイル名: photo66.jpg
+  → 保存場所: images/recruit/
 
-■ Instagram フォトグリッド（6枚・正方形推奨）
-  推奨サイズ：正方形（600px × 600px）
-  ・images/recruit/ig-01.jpg  → Instagram 投稿写真①
-  ・images/recruit/ig-02.jpg  → Instagram 投稿写真②
-  ・images/recruit/ig-03.jpg  → Instagram 投稿写真③
-  ・images/recruit/ig-04.jpg  → Instagram 投稿写真④
-  ・images/recruit/ig-05.jpg  → Instagram 投稿写真⑤
-  ・images/recruit/ig-06.jpg  → Instagram 投稿写真⑥
+写真67：新入生ページ リーダー部長 写真
+  → ファイル名: photo67.jpg
+  → 保存場所: images/recruit/
 
-合計 17 枚
+写真68：新入生ページ ブラスバンド部長 写真
+  → ファイル名: photo68.jpg
+  → 保存場所: images/recruit/
+
+写真69：新入生ページ チアリーダー部長 写真
+  → ファイル名: photo69.jpg
+  → 保存場所: images/recruit/
+
+写真70：新入生ページ 新歓スケジュール写真1
+  → ファイル名: photo70.jpg
+  → 保存場所: images/recruit/
+
+写真71：新入生ページ 新歓スケジュール写真2
+  → ファイル名: photo71.jpg
+  → 保存場所: images/recruit/
+
+写真72：新入生ページ 新歓スケジュール写真3
+  → ファイル名: photo72.jpg
+  → 保存場所: images/recruit/
+
+写真73：新入生ページ 新歓スケジュール写真4
+  → ファイル名: photo73.jpg
+  → 保存場所: images/recruit/
+
+写真74：新入生ページ 新歓スケジュール写真5
+  → ファイル名: photo74.jpg
+  → 保存場所: images/recruit/
+
+写真75：新入生ページ Instagram写真1
+  → ファイル名: photo75.jpg
+  → 保存場所: images/recruit/
+
+写真76：新入生ページ Instagram写真2
+  → ファイル名: photo76.jpg
+  → 保存場所: images/recruit/
+
+写真77：新入生ページ Instagram写真3
+  → ファイル名: photo77.jpg
+  → 保存場所: images/recruit/
+
+写真78：新入生ページ Instagram写真4
+  → ファイル名: photo78.jpg
+  → 保存場所: images/recruit/
+
+写真79：新入生ページ Instagram写真5
+  → ファイル名: photo79.jpg
+  → 保存場所: images/recruit/
+
+写真80：新入生ページ Instagram写真6
+  → ファイル名: photo80.jpg
+  → 保存場所: images/recruit/
