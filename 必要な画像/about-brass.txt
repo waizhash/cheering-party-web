@@ -12,27 +12,45 @@
   → ファイル名: photo43.jpg
   → 保存場所: images/departments/brass/
 
-写真44：ブラスバンド部 楽器 トランペット（★画像あり）
-  → ファイル名: photo44.jpg
+--- 楽器紹介カルーセル（表示順） ---
+
+写真188：ブラスバンド部 楽器 フルート・ピッコロ
+  → ファイル名: photo188.jpg
   → 保存場所: images/departments/brass/
 
 写真45：ブラスバンド部 楽器 クラリネット（★画像あり）
   → ファイル名: photo45.jpg
   → 保存場所: images/departments/brass/
 
-写真46：ブラスバンド部 楽器 トロンボーン（★画像あり）
-  → ファイル名: photo46.jpg
+写真47：ブラスバンド部 楽器 アルトサックス
+  → ファイル名: photo47.jpg
   → 保存場所: images/departments/brass/
 
-写真47：ブラスバンド部 楽器 サックス
-  → ファイル名: photo47.jpg
+写真189：ブラスバンド部 楽器 テナーサックス
+  → ファイル名: photo189.jpg
+  → 保存場所: images/departments/brass/
+
+写真190：ブラスバンド部 楽器 バリトンサックス
+  → ファイル名: photo190.jpg
+  → 保存場所: images/departments/brass/
+
+写真44：ブラスバンド部 楽器 トランペット（★画像あり）
+  → ファイル名: photo44.jpg
+  → 保存場所: images/departments/brass/
+
+写真191：ブラスバンド部 楽器 ホルン
+  → ファイル名: photo191.jpg
+  → 保存場所: images/departments/brass/
+
+写真46：ブラスバンド部 楽器 トロンボーン（★画像あり）
+  → ファイル名: photo46.jpg
   → 保存場所: images/departments/brass/
 
 写真48：ブラスバンド部 楽器 ユーフォニアム（★画像あり）
   → ファイル名: photo48.jpg
   → 保存場所: images/departments/brass/
 
-写真49：ブラスバンド部 楽器 チューバ／スーザフォン（★画像あり）
+写真49：ブラスバンド部 楽器 スーザフォン（★画像あり）
   → ファイル名: photo49.jpg
   → 保存場所: images/departments/brass/
 
