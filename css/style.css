@@ -1595,3 +1595,59 @@ section.bg-green { background: var(--color-green); color: #fff; }
   border-radius: 4px;
   white-space: nowrap;
 }
+
+/* ---------- FAQ ---------- */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+.bg-cream .faq-item {
+  background: #fdfaf5;
+}
+.faq-q {
+  font-family: var(--font-ja-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  padding: 18px 20px 18px 52px;
+  position: relative;
+  line-height: 1.6;
+}
+.faq-q::before {
+  content: "Q";
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  font-family: var(--font-en);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  line-height: 1;
+}
+.faq-a {
+  font-size: .925rem;
+  color: var(--color-text);
+  line-height: 1.8;
+  padding: 0 20px 18px 52px;
+  position: relative;
+}
+.faq-a::before {
+  content: "A";
+  position: absolute;
+  left: 16px;
+  top: 0;
+  font-family: var(--font-en);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-green);
+  line-height: 1;
+}
