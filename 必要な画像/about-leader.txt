@@ -32,6 +32,10 @@
   → ファイル名: photo36.jpg
   → 保存場所: images/departments/leader/
 
+団旗写真6（翠鳳旗）
+  → ファイル名: photo41.jpg
+  → 保存場所: images/departments/leader/
+
 写真37：リーダー部 役割写真 センターリーダー
   → ファイル名: photo37.jpg
   → 保存場所: images/departments/leader/
