@@ -19,6 +19,7 @@
  initMonthTabs();
  initHeroSlider();
  initPhotoOverlays();
+ initFaqAccordion();
  });
 
  /* ----------- ナビゲーション ----------- */
@@ -469,6 +470,33 @@
 
   // 5秒ごとに自動切り替え
   setInterval(function() { goTo(current + 1); }, 5000);
+ }
+
+ /* ----------- FAQ アコーディオン ----------- */
+ function initFaqAccordion() {
+  document.querySelectorAll(".faq-acc-q").forEach(function(btn) {
+   btn.addEventListener("click", function() {
+    var item = this.closest(".faq-acc-item");
+    var body = item.querySelector(".faq-acc-body");
+    var isOpen = this.classList.contains("is-open");
+
+    /* 同じアコーディオン内の他アイテムを閉じる */
+    var accordion = this.closest(".faq-accordion");
+    accordion.querySelectorAll(".faq-acc-q.is-open").forEach(function(openBtn) {
+     if (openBtn === btn) return;
+     openBtn.classList.remove("is-open");
+     openBtn.closest(".faq-acc-item").querySelector(".faq-acc-body").style.height = "0";
+    });
+
+    if (isOpen) {
+     this.classList.remove("is-open");
+     body.style.height = "0";
+    } else {
+     this.classList.add("is-open");
+     body.style.height = body.scrollHeight + "px";
+    }
+   });
+  });
  }
 
  /* ----------- 写真番号オーバーレイ（画像未設置時に番号を表示） ----------- */

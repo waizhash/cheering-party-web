@@ -1596,58 +1596,148 @@ section.bg-green { background: var(--color-green); color: #fff; }
   white-space: nowrap;
 }
 
-/* ---------- FAQ ---------- */
-.faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+/* ---------- FAQ アコーディオン ---------- */
+.faq-accordion {
   max-width: 800px;
   margin: 0 auto;
+  border-top: 1px solid var(--color-border);
 }
-.faq-item {
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
+.faq-acc-item {
+  border-bottom: 1px solid var(--color-border);
 }
-.bg-cream .faq-item {
-  background: #fdfaf5;
-}
-.faq-q {
+.faq-acc-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 4px 20px 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
   font-family: var(--font-ja-serif);
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-navy);
-  padding: 18px 20px 18px 52px;
-  position: relative;
   line-height: 1.6;
+  position: relative;
+  transition: color .2s;
 }
-.faq-q::before {
+.faq-acc-q:hover { color: var(--color-green); }
+.faq-acc-q::before {
   content: "Q";
   position: absolute;
-  left: 16px;
-  top: 16px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: var(--font-en);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--color-gold);
   line-height: 1;
 }
-.faq-a {
+.faq-acc-icon {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-gold);
+  line-height: 1;
+  transition: transform .3s ease;
+  user-select: none;
+}
+.faq-acc-q.is-open .faq-acc-icon {
+  transform: rotate(45deg);
+}
+.faq-acc-body {
+  overflow: hidden;
+  height: 0;
+  transition: height .3s ease;
+}
+.faq-acc-a {
   font-size: .925rem;
   color: var(--color-text);
-  line-height: 1.8;
-  padding: 0 20px 18px 52px;
+  line-height: 1.85;
+  padding: 0 4px 20px 40px;
   position: relative;
 }
-.faq-a::before {
+.faq-acc-a::before {
   content: "A";
   position: absolute;
-  left: 16px;
+  left: 0;
   top: 0;
   font-family: var(--font-en);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--color-green);
   line-height: 1;
+}
+
+/* ---------- FAQ 部門カード行 ---------- */
+.faq-dept-row {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+.faq-dept-card {
+  width: 240px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+.bg-cream .faq-dept-card { background: #fdfaf5; }
+.faq-dept-card-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+}
+.faq-dept-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.faq-dept-card-body .label {
+  font-size: .7rem;
+  letter-spacing: .15em;
+  color: var(--color-gold);
+  font-family: var(--font-en);
+}
+.faq-dept-card-body h3 {
+  font-family: var(--font-ja-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 0;
+}
+.faq-dept-card-body p {
+  font-size: .85rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0;
+}
+.faq-dept-card-body .btn-join {
+  align-self: flex-start;
+  font-size: .8rem;
+  padding: 8px 16px;
+  margin-top: 4px;
+}
+.faq-dept-faq {
+  flex: 1;
+  min-width: 0;
+}
+.faq-dept-faq .faq-accordion {
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .faq-dept-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .faq-dept-card {
+    width: 100%;
+  }
 }
