@@ -19,6 +19,7 @@
  initMonthTabs();
  initHeroSlider();
  initPhotoOverlays();
+ renderLeadershipPanel();
  initFaqAccordion();
  });
 
@@ -235,6 +236,7 @@
  activity: "声出し練習、振り付けの作成、ステージ構成の検討など、応援の指揮を執る重要な役割を担っています。",
  activityLink: "about/leader.html",
  bg: "images/departments/leader/leader-main.jpg",
+ groupPhoto: "images/members/photo123.jpg",
  yearDesc: {
  4: "応援団を支える中心メンバーとして、後輩を導き、団の目標に向かって日々全力で取り組んでいます。",
  3: "経験を活かしながら、部の中核として活動をリードする学年です。",
@@ -249,6 +251,7 @@
  activity: "応援曲の練習、マーチング練習、定期演奏会の準備など、音楽面から応援団を支えています。",
  activityLink: "about/brass.html",
  bg: "images/departments/brass/brass-main.jpg",
+ groupPhoto: "images/members/photo124.jpg",
  yearDesc: {
  4: "演奏技術と音楽性を極め、後輩へ技術と心を伝承する最上級生です。",
  3: "バンドの中心として演奏をまとめ、次世代のリーダーへと成長しています。",
@@ -263,6 +266,7 @@
  activity: "ダンス練習、スタンツ練習、振付制作など、笑顔と元気あふれる応援を届けています。",
  activityLink: "about/cheer-dept.html",
  bg: "images/departments/cheer/cheer-main.jpg",
+ groupPhoto: "images/members/photo125.jpg",
  yearDesc: {
  4: "チアの技術と精神を体現し、チーム全体を導くベテランメンバーです。",
  3: "スタンツやダンスのリーダーとして、演技の完成度を高めています。",
@@ -273,99 +277,76 @@
  };
 
  function initMembersDeptPanel() {
- var deptTabs = document.querySelectorAll(".dept-select-tab");
- var panelWrap = document.querySelector("[data-dept-panel]");
- if (!deptTabs.length || !panelWrap || typeof MEMBERS_DATA === "undefined") return;
+  var deptTabs = document.querySelectorAll(".dept-select-tab");
+  var panelWrap = document.querySelector("[data-dept-panel]");
+  if (!deptTabs.length || !panelWrap || typeof MEMBERS_DATA === "undefined") return;
 
- var currentDept = "leader";
- var currentYear = null;
+  var currentDept = "leader";
 
- function getYears(dept) {
- var members = MEMBERS_DATA[dept] || [];
- var ys = members.map(function(m){ return m.year; }).filter(Boolean);
- ys = ys.filter(function(y, i){ return ys.indexOf(y) === i; });
- ys.sort(function(a,b){ return b-a; });
- return ys;
- }
+  function renderPanel(dept) {
+   var meta = DEPT_META[dept] || {};
+   var members = MEMBERS_DATA[dept] || [];
 
- function renderPanel(dept, year) {
- var meta = DEPT_META[dept] || {};
- var members = MEMBERS_DATA[dept] || [];
- var years = getYears(dept);
- if (!year || years.indexOf(year) === -1) year = years[0] || null;
- currentYear = year;
+   // header
+   var headerHTML =
+    '<div class="dept-panel-header" style="background-image:url(\'' + (meta.bg||'') + '\')">' +
+    '<div class="dept-panel-header-inner">' +
+    '<span class="dept-panel-header-icon">' + (meta.icon||'') + '</span>' +
+    '<h2>' + escapeHtml(meta.name||dept) + '</h2>' +
+    '</div>' +
+    '</div>' +
+    '<p class="dept-panel-desc">' + escapeHtml(meta.desc||'') + '</p>';
 
- var filteredMembers = year ? members.filter(function(m){ return m.year === year; }) : members;
+   // 3年生 個人カード
+   var gridHTML =
+    '<div class="year-content">' +
+    '<h3 class="year-intro-head">3年生</h3>' +
+    '<p class="year-intro-desc">' + escapeHtml((meta.yearDesc && meta.yearDesc[3]) || '') + '</p>' +
+    '<div class="members-panel-grid">' +
+    members.map(function(m){
+     return (
+      '<div class="member-panel-card">' +
+      '<div class="mp-photo" style="background-image:url(\'' + (m.image||'') + '\')"></div>' +
+      '<span class="mp-name">' + escapeHtml(m.name||'') + '</span>' +
+      '</div>'
+     );
+    }).join('') +
+    '</div>' +
+    '</div>';
 
- // header
- var headerHTML =
- '<div class="dept-panel-header" style="background-image:url(\'' + (meta.bg||'') + '\')">' +
- '<div class="dept-panel-header-inner">' +
- '<span class="dept-panel-header-icon">' + (meta.icon||'') + '</span>' +
- '<h2>' + escapeHtml(meta.name||dept) + '</h2>' +
- '</div>' +
- '</div>' +
- '<p class="dept-panel-desc">' + escapeHtml(meta.desc||'') + '</p>';
+   // 1・2年生 集合写真
+   var groupHTML = meta.groupPhoto ?
+    '<div class="year-content">' +
+    '<h3 class="year-intro-head">1・2年生</h3>' +
+    '<div class="group-photo-wrap">' +
+    '<div class="group-photo-img" style="background-image:url(\'' + meta.groupPhoto + '\')"></div>' +
+    '</div>' +
+    '</div>' : '';
 
- // year tabs
- var yearTabsHTML = '<div class="year-tabs">' +
- years.map(function(y){
- return '<button class="year-tab' + (y === year ? ' active' : '') + '" data-tab-year="' + y + '">' + y + '年生</button>';
- }).join('') +
- '</div>';
+   // activity
+   var actHTML =
+    '<div class="dept-panel-activity">' +
+    '<span class="dept-panel-activity-icon">' + (meta.icon||'') + '</span>' +
+    '<div class="dept-panel-activity-body">' +
+    '<h4>' + escapeHtml(meta.name||'') + 'の活動</h4>' +
+    '<p>' + escapeHtml(meta.activity||'') + '</p>' +
+    '</div>' +
+    '<a href="' + (meta.activityLink||'#') + '" class="dept-panel-activity-link">活動の様子を見る →</a>' +
+    '</div>';
 
- // member grid
- var ydesc = (meta.yearDesc && year) ? (meta.yearDesc[year] || '') : '';
- var gridHTML =
- '<div class="year-content">' +
- '<h3 class="year-intro-head">' + (year ? year + '年生紹介' : '全員') + '</h3>' +
- (ydesc ? '<p class="year-intro-desc">' + escapeHtml(ydesc) + '</p>' : '') +
- '<div class="members-panel-grid">' +
- filteredMembers.map(function(m){
- return (
- '<div class="member-panel-card">' +
- '<div class="mp-photo" style="background-image:url(\'' + (m.image||'') + '\')"></div>' +
- '<span class="mp-role">' + escapeHtml(m.role||'') + '</span>' +
- '<span class="mp-name">' + escapeHtml(m.name||'') + '</span>' +
- '<span class="mp-dept">' + escapeHtml(m.department||'') + (m.year ? ' ' + m.year + '年' : '') + '</span>' +
- (m.comment ? '<span class="mp-msg-label">メッセージ</span><span class="mp-msg">' + escapeHtml(m.comment) + '</span>' : '') +
- '</div>'
- );
- }).join('') +
- '</div>' +
- '</div>';
+   panelWrap.innerHTML = headerHTML + gridHTML + groupHTML + actHTML;
+  }
 
- // activity
- var actHTML =
- '<div class="dept-panel-activity">' +
- '<span class="dept-panel-activity-icon">' + (meta.icon||'') + '</span>' +
- '<div class="dept-panel-activity-body">' +
- '<h4>' + escapeHtml(meta.name||'') + 'の活動</h4>' +
- '<p>' + escapeHtml(meta.activity||'') + '</p>' +
- '</div>' +
- '<a href="' + (meta.activityLink||'#') + '" class="dept-panel-activity-link">活動の様子を見る →</a>' +
- '</div>';
+  deptTabs.forEach(function(tab){
+   tab.addEventListener("click", function(){
+    deptTabs.forEach(function(t){ t.classList.remove("active"); });
+    tab.classList.add("active");
+    currentDept = tab.dataset.dept;
+    renderPanel(currentDept);
+   });
+  });
 
- panelWrap.innerHTML = headerHTML + yearTabsHTML + gridHTML + actHTML;
-
- // re-bind year tab events
- panelWrap.querySelectorAll(".year-tab").forEach(function(ytab){
- ytab.addEventListener("click", function(){
- renderPanel(currentDept, parseInt(ytab.dataset.tabYear));
- });
- });
- }
-
- deptTabs.forEach(function(tab){
- tab.addEventListener("click", function(){
- deptTabs.forEach(function(t){ t.classList.remove("active"); });
- tab.classList.add("active");
- currentDept = tab.dataset.dept;
- renderPanel(currentDept, null);
- });
- });
-
- renderPanel(currentDept, null);
+  renderPanel(currentDept);
  }
 
  /* ----------- カルーセル ----------- */
@@ -470,6 +451,34 @@
 
   // 5秒ごとに自動切り替え
   setInterval(function() { goTo(current + 1); }, 5000);
+ }
+
+ /* ----------- 幹部カード ----------- */
+ function renderLeadershipPanel() {
+  var panel = document.querySelector("[data-leadership-panel]");
+  if (!panel || typeof MEMBERS_DATA === "undefined" || !MEMBERS_DATA.leadership) return;
+
+  var cardsHTML = MEMBERS_DATA.leadership.map(function(m){
+   return (
+    '<div class="exec-card">' +
+    '<div class="exec-card-photo" style="background-image:url(\'' + (m.image||'') + '\')"></div>' +
+    '<div class="exec-card-body">' +
+    '<span class="exec-card-name">' + escapeHtml(m.name||'') + '</span>' +
+    '<div class="exec-card-roles">' +
+    (m.roles||[]).map(function(r){ return '<span class="exec-card-role">' + escapeHtml(r) + '</span>'; }).join('') +
+    '</div>' +
+    '</div>' +
+    '</div>'
+   );
+  }).join('');
+
+  panel.innerHTML =
+   '<section class="members-exec-section">' +
+   '<div class="container">' +
+   '<div class="sec-head-ul"><h2>幹部紹介</h2><span class="ul-line"></span></div>' +
+   '<div class="exec-cards-grid">' + cardsHTML + '</div>' +
+   '</div>' +
+   '</section>';
  }
 
  /* ----------- FAQ アコーディオン ----------- */
