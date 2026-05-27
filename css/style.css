@@ -1566,59 +1566,50 @@ section.bg-green { background: var(--color-green); color: #fff; }
   .dept-tabs-sticky .dept-select-tab { padding: 10px 12px; font-size: 11px; }
 }
 
-/* ---------- 幹部カード ---------- */
-.members-exec-section {
-  background: var(--color-bg-cream, #faf8f4);
-  padding: 60px 0;
-}
-.exec-cards-grid {
-  display: grid;
+/* ---------- 4年生横型カード ---------- */
+.members-panel-grid--4th {
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-top: 32px;
 }
-.exec-card {
+.member-4th-card {
   display: flex;
-  border: 1px solid var(--color-border);
-  border-radius: 10px;
+  border: 1px solid var(--color-line);
+  border-radius: 6px;
   overflow: hidden;
   background: #fff;
 }
-.exec-card-photo {
-  width: 110px;
+.member-4th-card .mp-photo {
+  width: 50%;
   flex-shrink: 0;
-  background: #b8cce4 center/cover no-repeat;
-  min-height: 110px;
+  aspect-ratio: 3/4;
+  background: #ddd center/cover no-repeat;
 }
-.exec-card-body {
+.member-4th-card .mp-info {
   flex: 1;
-  padding: 14px 16px;
-  background: #dce8f5;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 6px;
+  border-left: 1px solid var(--color-line);
 }
-.exec-card-name {
-  font-family: var(--font-ja-serif);
-  font-size: 1rem;
+.member-4th-card .mp-name {
+  font-size: 13px;
   font-weight: 700;
-  color: var(--color-navy);
-  line-height: 1.4;
+  color: var(--color-ink);
+  font-family: var(--font-serif);
 }
-.exec-card-roles {
+.member-4th-card .mp-roles {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
-.exec-card-role {
-  font-size: 0.72rem;
-  color: #4a6080;
+.member-4th-card .mp-role-item {
+  font-size: 10px;
+  color: var(--color-muted);
   line-height: 1.5;
 }
 @media (max-width: 640px) {
-  .exec-cards-grid { grid-template-columns: 1fr; }
-  .exec-card-photo { width: 90px; min-height: 90px; }
+  .members-panel-grid--4th { grid-template-columns: 1fr; }
 }
 
 /* ---------- 集合写真 ---------- */
