@@ -1633,26 +1633,18 @@ section.bg-green { background: var(--color-green); color: #fff; }
   display: flex;
   align-items: center;
   justify-content: center;
-  background: repeating-linear-gradient(
-    -45deg,
-    rgba(0,0,0,0.55) 0px,
-    rgba(0,0,0,0.55) 8px,
-    rgba(20,20,20,0.35) 8px,
-    rgba(20,20,20,0.35) 16px
-  );
+  background: rgba(210, 210, 210, 0.55);
   pointer-events: none;
   z-index: 2;
 }
 .photo-num-overlay span {
-  background: rgba(0,0,0,0.72);
-  color: var(--color-gold);
-  font-family: var(--font-en);
-  font-size: clamp(1rem, 3.5vw, 2rem);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  padding: 6px 18px;
-  border: 1.5px solid var(--color-gold);
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #333;
+  font-family: monospace, sans-serif;
+  font-size: clamp(0.6rem, 1.8vw, 0.85rem);
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 3px;
   white-space: nowrap;
 }
 

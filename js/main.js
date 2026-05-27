@@ -234,8 +234,8 @@
  desc: "声出しや振り付け、団の統率を担当し、応援の中心となって会場を鼓舞します。",
  activity: "声出し練習、振り付けの作成、ステージ構成の検討など、応援の指揮を執る重要な役割を担っています。",
  activityLink: "about/leader.html",
- bg: "images/departments/leader/leader-main.jpg",
- yearGroupPhotos: { 2: "images/members/photo123.jpg", 1: "images/members/photo126.jpg" },
+ bg: "images/departments/leader/photo62.jpg",
+ yearGroupPhotos: { 2: "images/members/photo118.jpg", 1: "images/members/photo121.jpg" },
  yearDesc: {
  4: "応援団を支える中心メンバーとして、後輩を導き、団の目標に向かって日々全力で取り組んでいます。",
  3: "経験を活かしながら、部の中核として活動をリードする学年です。"
@@ -247,8 +247,8 @@
  desc: "トランペットやトロンボーンなどの楽器を演奏し、応援に音で力強さと華やかさを加えます。",
  activity: "応援曲の練習、マーチング練習、定期演奏会の準備など、音楽面から応援団を支えています。",
  activityLink: "about/brass.html",
- bg: "images/departments/brass/brass-main.jpg",
- yearGroupPhotos: { 2: "images/members/photo124.jpg", 1: "images/members/photo127.jpg" },
+ bg: "images/departments/brass/photo33.jpg",
+ yearGroupPhotos: { 2: "images/members/photo119.jpg", 1: "images/members/photo122.jpg" },
  yearDesc: {
  4: "演奏技術と音楽性を極め、後輩へ技術と心を伝承する最上級生です。",
  3: "バンドの中心として演奏をまとめ、次世代のリーダーへと成長しています。"
@@ -260,8 +260,8 @@
  desc: "チアリーダーとして、華やかな演技と大きな笑顔で会場を盛り上げます。",
  activity: "ダンス練習、スタンツ練習、振付制作など、笑顔と元気あふれる応援を届けています。",
  activityLink: "about/cheer-dept.html",
- bg: "images/departments/cheer/cheer-main.jpg",
- yearGroupPhotos: { 2: "images/members/photo125.jpg", 1: "images/members/photo128.jpg" },
+ bg: "images/departments/cheer/photo48.jpg",
+ yearGroupPhotos: { 2: "images/members/photo120.jpg", 1: "images/members/photo123.jpg" },
  yearDesc: {
  4: "チアの技術と精神を体現し、チーム全体を導くベテランメンバーです。",
  3: "スタンツやダンスのリーダーとして、演技の完成度を高めています。"
@@ -520,12 +520,14 @@
 
  /* ----------- 写真番号オーバーレイ（画像未設置時に番号を表示） ----------- */
  function initPhotoOverlays() {
-  document.querySelectorAll("[style*='background-image']").forEach(function(el) {
+  function tryAttach(el) {
    var style = el.getAttribute("style") || "";
-   var urlMatch = style.match(/url\(['"]?([^'")\s]*photo(\d+)\.jpg)['"]?\)/);
-   if (!urlMatch) return;
-   var src = urlMatch[1];
-   var num = urlMatch[2];
+   if (!style.includes("images/")) return;
+   var m = style.match(/url\(['"]?([^'")\s]*\/(photo\d+)\.jpg)['"]?\)/);
+   if (!m) return;
+   if (el.querySelector(".photo-num-overlay")) return;
+   var src = m[1];
+   var label = m[2];
    var img = new Image();
    img.onerror = function() {
     if (el.querySelector(".photo-num-overlay")) return;
@@ -534,11 +536,33 @@
     }
     var overlay = document.createElement("div");
     overlay.className = "photo-num-overlay";
-    overlay.innerHTML = "<span>写真" + num + "</span>";
+    overlay.innerHTML = "<span>" + label + "</span>";
     el.appendChild(overlay);
    };
    img.src = src;
+  }
+
+  function scanAll() {
+   document.querySelectorAll("[style]").forEach(tryAttach);
+  }
+
+  scanAll();
+
+  /* 動的追加カード（団員タブ切り替え等）にも対応 */
+  var obs = new MutationObserver(function(muts) {
+   muts.forEach(function(m) {
+    if (m.type === "childList") {
+     m.addedNodes.forEach(function(n) {
+      if (n.nodeType !== 1) return;
+      tryAttach(n);
+      n.querySelectorAll && n.querySelectorAll("[style]").forEach(tryAttach);
+     });
+    } else if (m.type === "attributes") {
+     tryAttach(m.target);
+    }
+   });
   });
+  obs.observe(document.body, {childList: true, subtree: true, attributes: true, attributeFilter: ["style"]});
  }
 
  /* ----------- 月カード写真タブ ----------- */

@@ -6,7 +6,7 @@ const NEWS_ITEMS = [
  category: "活動報告",
  title: "春季野球リーグ 対○○大学戦 応援報告",
  body: "5月18日に行われた春季リーグ戦にて全力応援を届けました。ブラスバンドの演奏とチアの演技が会場を一体にし、選手たちに大きな力を与えることができました。",
- image: "images/news/news-01.jpg",
+ image: "images/news/photo124.jpg",
  url: ""
  },
  {
@@ -14,7 +14,7 @@ const NEWS_ITEMS = [
  category: "お知らせ",
  title: "新入団員募集中！体験練習会のご案内",
  body: "リーダー部・ブラスバンド部・チアリーダー部それぞれの体験練習会を開催します。楽器・ダンス未経験の方も大歓迎です。ぜひお気軽にお越しください。",
- image: "images/news/news-02.jpg",
+ image: "images/news/photo125.jpg",
  url: "recruit.html"
  },
  {
@@ -22,7 +22,7 @@ const NEWS_ITEMS = [
  category: "活動報告",
  title: "入学式にて歓迎演奏・演舞を披露しました",
  body: "三重大学入学式にてブラスバンド部の演奏、リーダー部の演舞、チアリーダー部のダンスを披露。新入生の皆さんの大学生活の始まりを全力でお祝いしました。",
- image: "images/news/news-03.jpg",
+ image: "images/news/photo126.jpg",
  url: ""
  },
  {
@@ -30,7 +30,7 @@ const NEWS_ITEMS = [
  category: "活動報告",
  title: "新歓演舞を実施しました",
  body: "新入生向けの新歓演舞を大学会館前広場で実施。三部合同のパフォーマンスに多くの新入生が足を止め、応援団の熱気を感じてもらえました。",
- image: "images/news/news-04.jpg",
+ image: "images/news/photo127.jpg",
  url: ""
  },
  {
@@ -38,7 +38,7 @@ const NEWS_ITEMS = [
  category: "活動報告",
  title: "卒業式 ブラスバンド演奏・チア演舞を披露",
  body: "3月22日の卒業式にてブラスバンド演奏と演舞を披露しました。卒業生の皆さんの門出を応援団一同、心より祝福いたしました。",
- image: "images/news/news-05.jpg",
+ image: "images/news/photo128.jpg",
  url: ""
  }
 ];
