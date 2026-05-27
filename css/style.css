@@ -1569,6 +1569,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
 /* ---------- 4年生横型カード ---------- */
 .members-panel-grid--4th {
   grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 }
 .member-4th-card {
   display: flex;
@@ -1580,6 +1581,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
 .member-4th-card .mp-photo {
   width: 50%;
   flex-shrink: 0;
+  align-self: flex-start;
   aspect-ratio: 3/4;
   background: #ddd center/cover no-repeat;
 }
