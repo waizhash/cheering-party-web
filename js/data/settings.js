@@ -19,6 +19,6 @@ const SITE_SETTINGS = {
  contact: {
  email: "ouendan@example.mie-u.ac.jp", // 実際のアドレスに変更
  instagram: "https://www.instagram.com/mie_cheer1985/",
- recruitInstagram: "https://www.instagram.com/mie_ouendan_recruit/" // 新歓専用アカウント
+ recruitInstagram: "https://www.instagram.com/mie_cheer.shinkanr8/" // 新歓専用アカウント
  }
 };
