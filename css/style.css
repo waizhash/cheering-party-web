@@ -1585,7 +1585,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
   border-left: 1px solid var(--color-line);
 }
 .member-4th-card .mp-name {
-  font-size: 15px;
+  font-size: clamp(15px, 3.5vw, 35px);
   font-weight: 700;
   color: var(--color-ink);
   font-family: var(--font-serif);
@@ -1596,7 +1596,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
   gap: 2px;
 }
 .member-4th-card .mp-role-item {
-  font-size: 12px;
+  font-size: clamp(11px, 2vw, 25px);
   color: var(--color-muted);
   line-height: 1.5;
 }
