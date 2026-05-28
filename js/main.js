@@ -11,6 +11,7 @@
  initOuendanTabs();
  initScrollTop();
  renderScheduleCards();
+ initScheduleDetail();
  initMembersDeptPanel();
  renderCheerPanels();
  renderFooterInfo();
@@ -90,11 +91,12 @@
  var target = document.querySelector("[data-schedule-list]");
  if (!target || typeof SCHEDULE_ITEMS === "undefined") return;
 
- var html = SCHEDULE_ITEMS.map(function (item) {
+ var html = SCHEDULE_ITEMS.map(function (item, idx) {
  var d = formatDate(item.date);
  var img = item.image ? 'url("' + item.image + '")' : '';
+ var href = 'schedule-detail.html?id=' + idx;
  return (
- '<div class="schedule-card">' +
+ '<a class="schedule-card" href="' + href + '">' +
  '<div class="schedule-card-date">' +
  '<span class="num">' + d.m + '.' + d.d + '</span>' +
  '<span class="day">' + d.dow + '</span>' +
@@ -105,10 +107,52 @@
  '<div class="schedule-card-title">' + escapeHtml(item.title) + '</div>' +
  '<div class="schedule-card-place">' + escapeHtml(item.place || "") + '</div>' +
  '</div>' +
- '</div>'
+ '</a>'
  );
  }).join("");
  target.innerHTML = html || '<p style="color:var(--color-muted);font-size:14px;">現在掲載している予定はありません。</p>';
+ }
+
+ /* ----------- 活動予定 詳細ページ ----------- */
+ function initScheduleDetail() {
+  var wrap = document.querySelector("[data-schedule-detail]");
+  if (!wrap || typeof SCHEDULE_ITEMS === "undefined") return;
+
+  var params = new URLSearchParams(window.location.search);
+  var id = parseInt(params.get("id"), 10);
+  var item = (!isNaN(id) && id >= 0) ? SCHEDULE_ITEMS[id] : null;
+
+  if (!item) {
+   wrap.innerHTML = '<p style="color:var(--color-muted);font-size:14px;">予定が見つかりませんでした。</p>';
+   return;
+  }
+
+  var d = formatDate(item.date);
+  var img = item.image ? 'url("' + item.image + '")' : '';
+  var bodyHtml = item.body
+   ? '<div class="sched-detail-body">' +
+     escapeHtml(item.body).replace(/\n/g, '<br>') +
+     '</div>'
+   : '';
+
+  var dow = ['日','月','火','水','木','金','土'];
+  var dateObj = new Date(item.date);
+  var dateStr = item.date + '（' + dow[dateObj.getDay()] + '）';
+
+  wrap.innerHTML =
+   '<div class="sched-detail">' +
+   '<div class="sched-detail-head">' +
+   (item.category ? '<span class="schedule-card-cat">' + escapeHtml(item.category) + '</span>' : '') +
+   '<h1 class="sched-detail-title">' + escapeHtml(item.title) + '</h1>' +
+   '<div class="sched-detail-meta">' +
+   '<span class="sched-detail-date">📅 ' + dateStr + '</span>' +
+   (item.place ? '<span class="sched-detail-place">📍 ' + escapeHtml(item.place) + '</span>' : '') +
+   '</div>' +
+   '</div>' +
+   (img ? '<div class="sched-detail-img" style="background-image:' + img + '"></div>' : '') +
+   bodyHtml +
+   '<a href="index.html" class="sched-detail-back">← トップページへ戻る</a>' +
+   '</div>';
  }
 
  /* ----------- 応援紹介：2ペイン ----------- */

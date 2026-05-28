@@ -325,7 +325,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
   width: 240px; flex-shrink: 0;
   background: var(--color-bg-alt);
   border: 1px solid var(--color-line);
-  cursor: default;
+  color: inherit; text-decoration: none; display: block;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .schedule-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.1); transform: translateY(-2px); }
@@ -359,6 +359,16 @@ section.bg-green { background: var(--color-green); color: #fff; }
   display: flex; align-items: center; gap: 4px;
 }
 .schedule-card-place::before { content: "📍"; font-size: 11px; }
+
+/* 活動予定 詳細ページ */
+.sched-detail { max-width: 760px; margin: 0 auto; padding: 40px 0 60px; }
+.sched-detail-head { margin-bottom: 28px; }
+.sched-detail-title { font-family: var(--font-serif); font-size: clamp(22px, 3vw, 32px); line-height: 1.4; margin: 10px 0 18px; color: var(--color-ink); }
+.sched-detail-meta { display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; color: var(--color-muted); }
+.sched-detail-img { aspect-ratio: 16/10; background: #ddd center/cover no-repeat; border-radius: 8px; margin-bottom: 32px; }
+.sched-detail-body { font-size: 15px; line-height: 2; color: var(--color-text); margin-bottom: 40px; }
+.sched-detail-back { display: inline-block; font-size: 13px; font-weight: 600; color: var(--color-green); border: 1px solid var(--color-green); padding: 10px 20px; border-radius: 4px; transition: background .2s, color .2s; }
+.sched-detail-back:hover { background: var(--color-green); color: #fff; }
 
 /* Instagram セクション */
 .insta-section-head {
