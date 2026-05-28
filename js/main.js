@@ -231,40 +231,40 @@
  leader: {
  icon: "",
  name: "リーダー部",
- desc: "声出しや振り付け、団の統率を担当し、応援の中心となって会場を鼓舞します。",
- activity: "声出し練習、振り付けの作成、ステージ構成の検討など、応援の指揮を執る重要な役割を担っています。",
+ desc: "力強い声と姿で応援を先導します！",
+ activity: "発生練習、ステージ構成の検討など、応援の指揮を執る重要な役割を担っています。",
  activityLink: "about/leader.html",
  bg: "images/departments/leader/photo62.jpg",
  yearGroupPhotos: { 2: "images/members/photo118.jpg", 1: "images/members/photo121.jpg" },
  yearDesc: {
- 4: "応援団を支える中心メンバーとして、後輩を導き、団の目標に向かって日々全力で取り組んでいます。",
- 3: "経験を活かしながら、部の中核として活動をリードする学年です。"
+ 4: "後輩を導き、団の目標に向かって日々全力で取り組んでいます。",
+ 3: "経験を活かしながら、部の中核として活動をリードします。"
  }
  },
  brass: {
  icon: "",
  name: "ブラスバンド部",
- desc: "トランペットやトロンボーンなどの楽器を演奏し、応援に音で力強さと華やかさを加えます。",
+ desc: "演奏の力で、応援に音で力強さと華やかさを加えます。",
  activity: "応援曲の練習、マーチング練習、定期演奏会の準備など、音楽面から応援団を支えています。",
  activityLink: "about/brass.html",
  bg: "images/departments/brass/photo33.jpg",
  yearGroupPhotos: { 2: "images/members/photo119.jpg", 1: "images/members/photo122.jpg" },
  yearDesc: {
- 4: "演奏技術と音楽性を極め、後輩へ技術と心を伝承する最上級生です。",
- 3: "バンドの中心として演奏をまとめ、次世代のリーダーへと成長しています。"
+ 4: "自然と着いていきたくなる背中を見せます！",
+ 3: "バンドの中心として演奏をまとめ、次世代のリーダーへと成長していきます！"
  }
  },
  cheer: {
  icon: "",
  name: "チアリーダー部",
- desc: "チアリーダーとして、華やかな演技と大きな笑顔で会場を盛り上げます。",
+ desc: "華やかな演技と大きな笑顔で会場を盛り上げます。",
  activity: "ダンス練習、スタンツ練習、振付制作など、笑顔と元気あふれる応援を届けています。",
  activityLink: "about/cheer-dept.html",
  bg: "images/departments/cheer/photo48.jpg",
  yearGroupPhotos: { 2: "images/members/photo120.jpg", 1: "images/members/photo123.jpg" },
  yearDesc: {
- 4: "チアの技術と精神を体現し、チーム全体を導くベテランメンバーです。",
- 3: "スタンツやダンスのリーダーとして、演技の完成度を高めています。"
+ 4: "元気溌剌と笑顔で部員を引っ張ります！",
+ 3: "メリハリを大事に、部員の成長を支えます！"
  }
  }
  };
@@ -290,6 +290,7 @@
     '<div class="dept-panel-header-inner">' +
     '<span class="dept-panel-header-icon">' + (meta.icon||'') + '</span>' +
     '<h2>' + escapeHtml(meta.name||dept) + '</h2>' +
+    '<a href="' + (meta.activityLink||'#') + '" class="dept-panel-header-link">活動の様子を見る →</a>' +
     '</div>' +
     '</div>' +
     '<p class="dept-panel-desc">' + escapeHtml(meta.desc||'') + '</p>';
@@ -354,18 +355,7 @@
 
    contentHTML += '</div>';
 
-   // activity
-   var actHTML =
-    '<div class="dept-panel-activity">' +
-    '<span class="dept-panel-activity-icon">' + (meta.icon||'') + '</span>' +
-    '<div class="dept-panel-activity-body">' +
-    '<h4>' + escapeHtml(meta.name||'') + 'の活動</h4>' +
-    '<p>' + escapeHtml(meta.activity||'') + '</p>' +
-    '</div>' +
-    '<a href="' + (meta.activityLink||'#') + '" class="dept-panel-activity-link">活動の様子を見る →</a>' +
-    '</div>';
-
-   panelWrap.innerHTML = headerHTML + yearTabsHTML + contentHTML + actHTML;
+   panelWrap.innerHTML = headerHTML + yearTabsHTML + contentHTML;
 
    // 年次タブ再バインド
    panelWrap.querySelectorAll(".year-tab").forEach(function(ytab){

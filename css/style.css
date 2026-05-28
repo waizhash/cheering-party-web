@@ -1356,14 +1356,9 @@ section.bg-green { background: var(--color-green); color: #fff; }
 .member-panel-card .mp-msg-label { font-size: 10px; color: var(--color-muted); padding: 4px 6px 0; border-top: 1px solid var(--color-line); display: block; }
 .member-panel-card .mp-msg { font-size: 10px; padding: 2px 6px 8px; line-height: 1.5; display: block; }
 
-/* Dept panel activity (right panel bottom) */
-.dept-panel-activity { display: flex; align-items: flex-start; gap: 12px; padding: 14px 20px; background: #f0ede8; border-top: 1px solid var(--color-line); }
-.dept-panel-activity-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
-.dept-panel-activity-body { flex: 1; }
-.dept-panel-activity-body h4 { font-size: 13px; font-weight: 700; margin-bottom: 4px; }
-.dept-panel-activity-body p { font-size: 12px; color: var(--color-muted); line-height: 1.6; margin: 0; }
-.dept-panel-activity-link { margin-left: auto; flex-shrink: 0; font-size: 12px; font-weight: 600; color: var(--color-green); border: 1px solid var(--color-green); padding: 8px 12px; border-radius: 4px; white-space: nowrap; align-self: center; transition: background .2s, color .2s; }
-.dept-panel-activity-link:hover { background: var(--color-green); color: #fff; }
+/* Dept panel header link (right side of header) */
+.dept-panel-header-link { margin-left: auto; flex-shrink: 0; font-size: 11px; font-weight: 600; color: #fff; border: 1px solid rgba(255,255,255,0.7); padding: 6px 12px; border-radius: 4px; white-space: nowrap; transition: background .2s, border-color .2s; }
+.dept-panel-header-link:hover { background: rgba(255,255,255,0.18); border-color: #fff; }
 
 /* ---- 団員からのご挨拶 ---- */
 .greeting-page-intro { display: grid; grid-template-columns: 1fr 1fr; }
@@ -1512,9 +1507,6 @@ section.bg-green { background: var(--color-green); color: #fff; }
 .year-intro-desc { font-size: 13px; margin-bottom: 24px; }
 .members-panel-grid { grid-template-columns: repeat(6,1fr); gap: 14px; }
 
-/* アクティビティバー */
-.dept-panel-activity { padding: 18px 52px; }
-
 /* 固定フローティングCTA */
 .members-fixed-cta {
   position: fixed;
@@ -1547,7 +1539,6 @@ section.bg-green { background: var(--color-green); color: #fff; }
   .members-panel-grid { grid-template-columns: repeat(4,1fr); }
   .year-content { padding: 24px 32px; }
   .dept-panel-desc { padding: 14px 32px; }
-  .dept-panel-activity { padding: 14px 32px; }
   .dept-panel-header-inner { padding: 20px 32px; }
 }
 @media (max-width: 768px) {
@@ -1555,7 +1546,6 @@ section.bg-green { background: var(--color-green); color: #fff; }
   .members-panel-grid { grid-template-columns: repeat(3,1fr); }
   .year-content { padding: 20px 20px; }
   .dept-panel-desc { padding: 12px 20px; }
-  .dept-panel-activity { padding: 12px 20px; }
   .dept-panel-header-inner { padding: 16px 20px; }
   .dept-panel-header { height: 72px; }
   .dept-panel-header-inner { padding: 0 20px; }
@@ -1595,7 +1585,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
   border-left: 1px solid var(--color-line);
 }
 .member-4th-card .mp-name {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--color-ink);
   font-family: var(--font-serif);
@@ -1606,7 +1596,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
   gap: 2px;
 }
 .member-4th-card .mp-role-item {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--color-muted);
   line-height: 1.5;
 }
