@@ -1504,8 +1504,8 @@ section.bg-green { background: var(--color-green); color: #fff; }
 }
 
 /* パネルヘッダー：全幅 */
-.dept-panel-header { height: 90px; align-items: center; }
-.dept-panel-header-inner { padding: 0 52px; }
+.dept-panel-header { height: 200px; align-items: flex-end; }
+.dept-panel-header-inner { padding: 0 52px 20px; }
 .dept-panel-header h2 { font-size: 26px; }
 .dept-panel-header-icon { font-size: 24px; }
 .dept-panel-desc { padding: 18px 52px; font-size: 14px; }
