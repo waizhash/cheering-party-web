@@ -1389,6 +1389,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
 .greeting-card-text h2 { font-family: var(--font-serif); font-size: clamp(18px,2vw,24px); line-height: 1.6; margin-bottom: 24px; }
 .greeting-card-text p { font-size: 14px; color: var(--color-muted); line-height: 2.1; margin-bottom: 18px; }
 .greeting-card-text p:last-child { margin-bottom: 0; }
+.greeting-card-text .greeting-sig { margin-top: 32px; text-align: right; font-size: 13px; line-height: 2; color: var(--color-text); }
 
 /* =========================================
    レスポンシブ
