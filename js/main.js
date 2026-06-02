@@ -428,10 +428,18 @@
  var items = wrap.querySelectorAll(".carousel-item");
  if (!track || !items.length) return;
 
- var perView = parseInt(wrap.dataset.perView) || 6;
+ var perViewBase = parseInt(wrap.dataset.perView) || 6;
  var total = items.length;
- var pages = Math.ceil(total / perView);
  var current = 0;
+
+ function getPerView() {
+ if (window.innerWidth < 480) return 2;
+ if (window.innerWidth < 768) return 3;
+ return perViewBase;
+ }
+
+ var perView = getPerView();
+ var pages = Math.ceil(total / perView);
 
  // item width (equal)
  function itemW() {
@@ -440,6 +448,8 @@
  }
 
  function setItemWidths() {
+ perView = getPerView();
+ pages = Math.ceil(total / perView);
  var w = itemW();
  items.forEach(function(item){ item.style.width = w + "px"; });
  }
