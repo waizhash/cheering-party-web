@@ -45,14 +45,6 @@ const CHEER_DATA = {
    lyrics: "一、　三翠煌く地で　肩を組んで\n日々研鑽せし力　発揮せん\n翠旗の下に　勝利をつかめ\n我らの若き力　揮う時\n\n二、　学び舎に響き渡る　歌歌いて\nさぁ鍛錬せし技を　発揮せん\nいざ突き進み　栄光つかめ\n今こそ猛し想い　示す時\n心をいまひとつに　三重大学"
   },
   {
-   category: "応援歌",
-   title: "戦開始",
-   note: "※令和8年度作成曲",
-   youtubeId: "VIDEO_ID",
-   description: "令和8年度に新たに作成された応援歌です。",
-   lyrics: "（歌詞プレースホルダー）"
-  },
-  {
    category: "学生歌",
    title: "三重大学学生歌",
    note: "",
@@ -63,7 +55,6 @@ const CHEER_DATA = {
  ],
 
  // ===== ファンファーレ =====
-
  fanfares: [
   {
    category: "ファンファーレ",
@@ -127,11 +118,48 @@ const CHEER_DATA = {
  victory: [
   {
    category: "定番",
+   title: "戦闘開始",
+   note: "※令和8年度作成曲",
+   youtubeId: "VIDEO_ID",
+   description: "令和8年度に新たに作成されたメドレー曲です。",
+   lyricsLabel: "コール",
+   lyrics: ""
+  },
+  {
+   category: "定番",
+   title: "出塁曲1",
+   note: "※平成12年度作成曲",
+   youtubeId: "VIDEO_ID",
+   description: "",
+   lyricsLabel: "コール",
+   lyrics: "かっとばせー！〇〇！ヒットを打つぞ！オー！"
+  },
+  {
+   category: "定番",
+   title: "出塁曲2",
+   note: "※平成12年度作成曲",
+   youtubeId: "VIDEO_ID",
+   description: "",
+   lyricsLabel: "コール",
+   lyrics: "かっとばせー！〇〇！塁に出るぞ！オー！"
+  },
+  {
+   category: "定番",
+   title: "出塁曲3",
+   note: "※平成12年度作成曲",
+   youtubeId: "VIDEO_ID",
+   description: "",
+   lyricsLabel: "コール",
+   lyrics: "かっとばせー！〇〇！一発ホームラン！オー！"
+  },
+  {
+   category: "定番",
    title: "グリーンファイト",
    note: "",
    youtubeId: "VIDEO_ID",
    description: "三重大学応援団の必勝パターンメドレーの中核となる曲です。",
-   lyrics: "オーオーオーオー　オオオー\nオーオーオーオー　オオオー\nグリーンファイト　グリーンファイト\n燃えろ燃えろよ　グリーンファイト\n勝利をつかめ"
+   lyricsLabel: "コール",
+   lyrics: "Go×3 〇〇！｛Go Go 〇〇 〇〇 Let's Go!｝×2\nかっせー〇〇！ヒットだ〇〇！\nかっとばせGOかっとばせFIGHT\n〇〇ファイトー！オー！"
   },
   {
    category: "定番",
@@ -139,7 +167,8 @@ const CHEER_DATA = {
    note: "",
    youtubeId: "VIDEO_ID",
    description: "爽やかなリズムで会場を盛り上げるメドレー曲です。",
-   lyrics: ""
+   lyricsLabel: "コール",
+   lyrics: "〇〇！〇〇！\nGo Go Go 〇〇！"
   },
   {
    category: "定番",
@@ -147,7 +176,8 @@ const CHEER_DATA = {
    note: "",
    youtubeId: "VIDEO_ID",
    description: "テンポの良いリズムで知られるメドレー曲です。",
-   lyrics: ""
+   lyricsLabel: "コール",
+   lyrics: "｛Hey Hey 〇〇 We want win！｝×2\n〇〇！×6"
   },
   {
    category: "定番",
@@ -155,7 +185,8 @@ const CHEER_DATA = {
    note: "",
    youtubeId: "VIDEO_ID",
    description: "",
-   lyrics: ""
+   lyricsLabel: "コール",
+   lyrics: "｛ファイト〇〇！×2 Go Go Go Let's Go！｝×2\nGo Go"
   },
   {
    category: "定番",
@@ -163,6 +194,7 @@ const CHEER_DATA = {
    note: "",
    youtubeId: "VIDEO_ID",
    description: "",
+   lyricsLabel: "コール",
    lyrics: ""
   },
   {
@@ -171,14 +203,16 @@ const CHEER_DATA = {
    note: "",
    youtubeId: "VIDEO_ID",
    description: "",
+   lyricsLabel: "コール",
    lyrics: ""
   },
   {
    category: "定番",
    title: "SPLASH",
-   note: "※平成12年度作成曲",
+   note: "※平成22年度作成曲",
    youtubeId: "VIDEO_ID",
    description: "",
+   lyricsLabel: "コール",
    lyrics: ""
   },
   {
@@ -187,6 +221,7 @@ const CHEER_DATA = {
    note: "※令和元年度作成曲",
    youtubeId: "VIDEO_ID",
    description: "",
+   lyricsLabel: "コール",
    lyrics: ""
   },
   {
@@ -195,7 +230,8 @@ const CHEER_DATA = {
    note: "",
    youtubeId: "VIDEO_ID",
    description: "",
-   lyrics: ""
+   lyricsLabel: "コール",
+   lyrics: "Let's Go 〇〇！"
   },
   {
    category: "定番",
@@ -203,7 +239,8 @@ const CHEER_DATA = {
    note: "※令和7年度作成曲",
    youtubeId: "VIDEO_ID",
    description: "",
-   lyrics: ""
+   lyricsLabel: "コール",
+   lyrics: "勝つぞ勝つぞ勝つぞ勝つぞ〇〇！\n勝つぞ勝つぞ勝つぞ勝つぞ〇〇！"
   },
   {
    category: "定番",
@@ -211,7 +248,8 @@ const CHEER_DATA = {
    note: "※令和6年度作成曲",
    youtubeId: "VIDEO_ID",
    description: "",
-   lyrics: ""
+   lyricsLabel: "コール",
+   lyrics: "Go Go Go！Go fight win！\nGo Go Go！Let's get win！\nかっとばせー〇〇 〇〇 〇〇 オー〇〇！\nGo Go Go！Go fight win！\nGo Go Go！Let's get win！"
   },
   {
    category: "定番",
@@ -219,7 +257,8 @@ const CHEER_DATA = {
    note: "※平成9年度作成曲",
    youtubeId: "VIDEO_ID",
    description: "パターンの締めとなるマーチ曲です。",
-   lyrics: "（インスト曲）"
+   lyricsLabel: "コール",
+   lyrics: "M・I・E 〇〇！M・I・E 〇〇！\nGo Go 〇〇 〇〇 Let's Go！\nGo Go 〇〇 〇〇 Let's Go！\n打つぞー！〇〇！\nGo Go Go 〇〇！Let's Go！Let's Go！\nM･I･E 三重大 行けー行けー我ら三重大！三重大！"
   },
   {
    category: "定番",
@@ -227,6 +266,7 @@ const CHEER_DATA = {
    note: "",
    youtubeId: "VIDEO_ID",
    description: "行進や入場時に演奏されるマーチ曲です。",
+   lyricsLabel: "コール",
    lyrics: "（インスト曲）"
   }
  ]

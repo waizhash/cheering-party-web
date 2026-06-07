@@ -232,7 +232,7 @@
  if (hasLyrics || hasYoutube) {
  contentHTML = '<div class="ouendan-detail-content">';
  if (hasLyrics) {
- contentHTML += '<div class="ouendan-lyrics"><h4>歌詞</h4><div>' + escapeHtml(item.lyrics) + '</div></div>';
+ contentHTML += '<div class="ouendan-lyrics"><h4>' + (item.lyricsLabel || '歌詞') + '</h4><div>' + escapeHtml(item.lyrics) + '</div></div>';
  }
  if (item.youtubeId) {
  contentHTML += '<div class="video-wrap"><iframe src="' + src + '" title="' + escapeHtml(item.title) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
