@@ -284,11 +284,14 @@ section.bg-green { background: var(--color-green); color: #fff; }
 .page-header-left p { color: rgba(255,255,255,.8); font-size: 14px; margin-top: 16px; }
 .page-header-right { color: rgba(255,255,255,.85); font-size: 15px; line-height: 2; }
 .page-header--photo-right {
+  position: relative;
   overflow: hidden;
 }
 .page-header--photo-right .container {
   grid-template-columns: 1fr;
-  position: relative;
+}
+.page-header--photo-right .page-header-left {
+  max-width: 44%;
 }
 .page-header--photo-right::before {
   display: none;
@@ -298,7 +301,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
   right: 0;
   top: 0;
   bottom: 0;
-  width: 60%;
+  width: 62%;
   overflow: hidden;
 }
 .page-header-right--photo::before {
