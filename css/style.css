@@ -572,7 +572,7 @@ section.bg-green { background: var(--color-green); color: #fff; }
   grid-template-rows: 1fr 1fr;
   overflow: hidden;
   gap: 3px;
-  background: #111;
+  background: linear-gradient(to right, var(--color-bg-alt), #111);
 }
 .recruit-hero-photo {
   background: #ddd center/cover no-repeat;
