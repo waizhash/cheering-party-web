@@ -572,17 +572,6 @@ section.bg-green { background: var(--color-green); color: #fff; }
   grid-template-rows: 1fr 1fr;
   overflow: hidden;
   gap: 3px;
-  background: #111;
-  position: relative;
-  isolation: isolate;
-}
-.recruit-hero-right::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, var(--color-bg-alt) 0%, transparent 40%);
-  z-index: 1;
-  pointer-events: none;
 }
 .recruit-hero-photo {
   background: #ddd center/cover no-repeat;
